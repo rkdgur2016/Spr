@@ -1,0 +1,811 @@
+(SpringJUnit4ClassRunner.java:139) - SpringJUnit4ClassRunner constructor called with [class com.pcwk.ehr.user.service.UserServiceImplTest]
+(BootstrapUtils.java:108) - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+(BootstrapUtils.java:88) - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+(BootstrapUtils.java:143) - Instantiating TestContextBootstrapper for test class [com.pcwk.ehr.user.service.UserServiceImplTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+(AbstractDelegatingSmartContextLoader.java:264) - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@649bec2e declaringClass = 'com.pcwk.ehr.user.service.UserServiceImplTest', classes = '{}', locations = '{classpath:/applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+(ActiveProfilesUtils.java:80) - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(AbstractTestContextBootstrapper.java:124) - @TestExecutionListeners is not present for class [com.pcwk.ehr.user.service.UserServiceImplTest]: using defaults.
+(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+(AbstractTestContextBootstrapper.java:189) - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2d710f1a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@29215f06, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@59505b48, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4efac082, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6bd61f98, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@48aca48b, org.springframework.test.context.event.EventPublishingTestExecutionListener@13fd2ccd]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(AbstractDirtiesContextTestExecutionListener.java:143) - Before test class: context [DefaultTestContext@1224144a testClass = UserServiceImplTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+(UserServiceImplTest.java:54) - ┌─────────────────────────────────────────────────────────┐
+(UserServiceImplTest.java:55) - │ setUpBeforeClass()                                      │
+(UserServiceImplTest.java:56) - └─────────────────────────────────────────────────────────┘
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.service.UserServiceImplTest]
+(DependencyInjectionTestExecutionListener.java:81) - Performing dependency injection for test context [[DefaultTestContext@1224144a testClass = UserServiceImplTest, testInstance = com.pcwk.ehr.user.service.UserServiceImplTest@24959ca4, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+(AbstractDelegatingSmartContextLoader.java:274) - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+(AbstractGenericContextLoader.java:107) - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+(AbstractEnvironment.java:302) - Activating profiles []
+(XmlBeanDefinitionReader.java:393) - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dummyMailService'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mailSenderImpl'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'transactionManager'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userService'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(DefaultCacheAwareContextLoaderDelegate.java:92) - Storing ApplicationContext [1408482749] in cache under key [[MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@178213b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [1408482749] from cache with key [[MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@178213b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - Before test method: context [DefaultTestContext@1224144a testClass = UserServiceImplTest, testInstance = com.pcwk.ehr.user.service.UserServiceImplTest@24959ca4, testMethod = upgradeLevels@UserServiceImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [1408482749] from cache with key [[MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@178213b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+(UserServiceImplTest.java:61) - ┌─────────────────────────────────────────────────────────┐
+(UserServiceImplTest.java:62) - │ setUp()                                                 │
+(UserServiceImplTest.java:63) - └─────────────────────────────────────────────────────────┘
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [1408482749] from cache with key [[MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@178213b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+(UserServiceImplTest.java:173) - ┌──────────────────────────────────────────┐
+(UserServiceImplTest.java:174) - │ upgradeLevels()                          │
+(UserServiceImplTest.java:175) - └──────────────────────────────────────────┘
+(UserDaoJdbc.java:213) - 1.sql:
+ DELETE FROM member 
+
+(JdbcTemplate.java:538) - Executing SQL update [ DELETE FROM member 
+]
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(UserDaoJdbc.java:216) - 2.flag:5
+(UserDaoJdbc.java:197) - 1.sql:
+ SELECT COUNT(*) cnt 
+ FROM member         
+
+(JdbcTemplate.java:443) - Executing SQL query [ SELECT COUNT(*) cnt 
+ FROM member         
+]
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(UserDaoJdbc.java:201) - 2.count:0
+(UserDaoJdbc.java:249) - 1.sql:
+ INSERT INTO member ( 
+     user_id,         
+     name,            
+     password,        
+     birthday,        
+     u_level,         
+     login,           
+     recommend,       
+     email,           
+     reg_dt           
+ ) VALUES (           
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     SYSDATE          
+ )                    
+
+(UserDaoJdbc.java:255) - 2.param:human01
+(UserDaoJdbc.java:255) - 2.param:사람01
+(UserDaoJdbc.java:255) - 2.param:1111
+(UserDaoJdbc.java:255) - 2.param:2001-02-17
+(UserDaoJdbc.java:255) - 2.param:1
+(UserDaoJdbc.java:255) - 2.param:49
+(UserDaoJdbc.java:255) - 2.param:0
+(UserDaoJdbc.java:255) - 2.param:rkdgur2016@gmail.com
+(JdbcTemplate.java:958) - Executing prepared SQL update
+(JdbcTemplate.java:640) - Executing prepared SQL statement [ INSERT INTO member ( 
+     user_id,         
+     name,            
+     password,        
+     birthday,        
+     u_level,         
+     login,           
+     recommend,       
+     email,           
+     reg_dt           
+ ) VALUES (           
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     SYSDATE          
+ )                    
+]
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(UserDaoJdbc.java:259) - 3.flag:1
+(UserDaoJdbc.java:249) - 1.sql:
+ INSERT INTO member ( 
+     user_id,         
+     name,            
+     password,        
+     birthday,        
+     u_level,         
+     login,           
+     recommend,       
+     email,           
+     reg_dt           
+ ) VALUES (           
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     SYSDATE          
+ )                    
+
+(UserDaoJdbc.java:255) - 2.param:human02
+(UserDaoJdbc.java:255) - 2.param:사람02
+(UserDaoJdbc.java:255) - 2.param:2222
+(UserDaoJdbc.java:255) - 2.param:2001-02-18
+(UserDaoJdbc.java:255) - 2.param:1
+(UserDaoJdbc.java:255) - 2.param:50
+(UserDaoJdbc.java:255) - 2.param:2
+(UserDaoJdbc.java:255) - 2.param:rkdgur2016@gmail.com
+(JdbcTemplate.java:958) - Executing prepared SQL update
+(JdbcTemplate.java:640) - Executing prepared SQL statement [ INSERT INTO member ( 
+     user_id,         
+     name,            
+     password,        
+     birthday,        
+     u_level,         
+     login,           
+     recommend,       
+     email,           
+     reg_dt           
+ ) VALUES (           
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     SYSDATE          
+ )                    
+]
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(UserDaoJdbc.java:259) - 3.flag:1
+(UserDaoJdbc.java:249) - 1.sql:
+ INSERT INTO member ( 
+     user_id,         
+     name,            
+     password,        
+     birthday,        
+     u_level,         
+     login,           
+     recommend,       
+     email,           
+     reg_dt           
+ ) VALUES (           
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     SYSDATE          
+ )                    
+
+(UserDaoJdbc.java:255) - 2.param:human03
+(UserDaoJdbc.java:255) - 2.param:사람03
+(UserDaoJdbc.java:255) - 2.param:3333
+(UserDaoJdbc.java:255) - 2.param:2001-02-19
+(UserDaoJdbc.java:255) - 2.param:2
+(UserDaoJdbc.java:255) - 2.param:51
+(UserDaoJdbc.java:255) - 2.param:29
+(UserDaoJdbc.java:255) - 2.param:rkdgur2016@gmail.com
+(JdbcTemplate.java:958) - Executing prepared SQL update
+(JdbcTemplate.java:640) - Executing prepared SQL statement [ INSERT INTO member ( 
+     user_id,         
+     name,            
+     password,        
+     birthday,        
+     u_level,         
+     login,           
+     recommend,       
+     email,           
+     reg_dt           
+ ) VALUES (           
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     SYSDATE          
+ )                    
+]
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(UserDaoJdbc.java:259) - 3.flag:1
+(UserDaoJdbc.java:249) - 1.sql:
+ INSERT INTO member ( 
+     user_id,         
+     name,            
+     password,        
+     birthday,        
+     u_level,         
+     login,           
+     recommend,       
+     email,           
+     reg_dt           
+ ) VALUES (           
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     SYSDATE          
+ )                    
+
+(UserDaoJdbc.java:255) - 2.param:human04
+(UserDaoJdbc.java:255) - 2.param:사람04
+(UserDaoJdbc.java:255) - 2.param:4444
+(UserDaoJdbc.java:255) - 2.param:2001-02-20
+(UserDaoJdbc.java:255) - 2.param:2
+(UserDaoJdbc.java:255) - 2.param:52
+(UserDaoJdbc.java:255) - 2.param:30
+(UserDaoJdbc.java:255) - 2.param:rkdgur2016@gmail.com
+(JdbcTemplate.java:958) - Executing prepared SQL update
+(JdbcTemplate.java:640) - Executing prepared SQL statement [ INSERT INTO member ( 
+     user_id,         
+     name,            
+     password,        
+     birthday,        
+     u_level,         
+     login,           
+     recommend,       
+     email,           
+     reg_dt           
+ ) VALUES (           
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     SYSDATE          
+ )                    
+]
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(UserDaoJdbc.java:259) - 3.flag:1
+(UserDaoJdbc.java:249) - 1.sql:
+ INSERT INTO member ( 
+     user_id,         
+     name,            
+     password,        
+     birthday,        
+     u_level,         
+     login,           
+     recommend,       
+     email,           
+     reg_dt           
+ ) VALUES (           
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     SYSDATE          
+ )                    
+
+(UserDaoJdbc.java:255) - 2.param:human05
+(UserDaoJdbc.java:255) - 2.param:사람05
+(UserDaoJdbc.java:255) - 2.param:5555
+(UserDaoJdbc.java:255) - 2.param:2001-02-21
+(UserDaoJdbc.java:255) - 2.param:3
+(UserDaoJdbc.java:255) - 2.param:55
+(UserDaoJdbc.java:255) - 2.param:32
+(UserDaoJdbc.java:255) - 2.param:rkdgur2016@gmail.com
+(JdbcTemplate.java:958) - Executing prepared SQL update
+(JdbcTemplate.java:640) - Executing prepared SQL statement [ INSERT INTO member ( 
+     user_id,         
+     name,            
+     password,        
+     birthday,        
+     u_level,         
+     login,           
+     recommend,       
+     email,           
+     reg_dt           
+ ) VALUES (           
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     ?,               
+     SYSDATE          
+ )                    
+]
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(UserDaoJdbc.java:259) - 3.flag:1
+(UserDaoJdbc.java:197) - 1.sql:
+ SELECT COUNT(*) cnt 
+ FROM member         
+
+(JdbcTemplate.java:443) - Executing SQL query [ SELECT COUNT(*) cnt 
+ FROM member         
+]
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(UserDaoJdbc.java:201) - 2.count:5
+(AbstractPlatformTransactionManager.java:370) - Creating new transaction with name [null]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(DataSourceTransactionManager.java:271) - Acquired Connection [oracle.jdbc.driver.T4CConnection@503fbbc6] for JDBC transaction
+(DataSourceTransactionManager.java:289) - Switching JDBC Connection [oracle.jdbc.driver.T4CConnection@503fbbc6] to manual commit
+(UserDaoJdbc.java:177) - 1.sql:
+  SELECT                                             
+     user_id,                                        
+     name,                                           
+     password,                                       
+     birthday,                                       
+     u_level,                                        
+     login,                                          
+     recommend,                                      
+     email,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt  
+ FROM                                                
+     member                                          
+	ORDER BY  user_id	                                
+
+(JdbcTemplate.java:443) - Executing SQL query [  SELECT                                             
+     user_id,                                        
+     name,                                           
+     password,                                       
+     birthday,                                       
+     u_level,                                        
+     login,                                          
+     recommend,                                      
+     email,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt  
+ FROM                                                
+     member                                          
+	ORDER BY  user_id	                                
+]
+(UserDaoJdbc.java:182) - User [userId=human01, name=사람01, password=1111, birthday=2001-02-17, level=BASIC, login=49, recommend=0, email=rkdgur2016@gmail.com, regDt=2024-07-05 11:29:52, toString()=com.pcwk.ehr.user.domain.User@d2387c8]
+(UserDaoJdbc.java:182) - User [userId=human02, name=사람02, password=2222, birthday=2001-02-18, level=BASIC, login=50, recommend=2, email=rkdgur2016@gmail.com, regDt=2024-07-05 11:29:52, toString()=com.pcwk.ehr.user.domain.User@3956b302]
+(UserDaoJdbc.java:182) - User [userId=human03, name=사람03, password=3333, birthday=2001-02-19, level=SILVER, login=51, recommend=29, email=rkdgur2016@gmail.com, regDt=2024-07-05 11:29:52, toString()=com.pcwk.ehr.user.domain.User@1500e009]
+(UserDaoJdbc.java:182) - User [userId=human04, name=사람04, password=4444, birthday=2001-02-20, level=SILVER, login=52, recommend=30, email=rkdgur2016@gmail.com, regDt=2024-07-05 11:29:52, toString()=com.pcwk.ehr.user.domain.User@1fd386c3]
+(UserDaoJdbc.java:182) - User [userId=human05, name=사람05, password=5555, birthday=2001-02-21, level=GOLD, login=55, recommend=32, email=rkdgur2016@gmail.com, regDt=2024-07-05 11:29:52, toString()=com.pcwk.ehr.user.domain.User@edf4f36]
+(UserDaoJdbc.java:108) - 1.sql:
+ UPDATE member              
+ SET                        
+     name       = ?,        
+     password   = ?,        
+     birthday   = ?,        
+     u_level    = ?,        
+     login      = ?,        
+     recommend  = ?,        
+     email      = ?,        
+     reg_dt     = SYSDATE   
+ WHERE                      
+         user_id = ?        
+
+(UserDaoJdbc.java:122) - 2.param:사람02
+(UserDaoJdbc.java:122) - 2.param:2222
+(UserDaoJdbc.java:122) - 2.param:2001-02-18
+(UserDaoJdbc.java:122) - 2.param:2
+(UserDaoJdbc.java:122) - 2.param:50
+(UserDaoJdbc.java:122) - 2.param:2
+(UserDaoJdbc.java:122) - 2.param:rkdgur2016@gmail.com
+(UserDaoJdbc.java:122) - 2.param:human02
+(JdbcTemplate.java:958) - Executing prepared SQL update
+(JdbcTemplate.java:640) - Executing prepared SQL statement [ UPDATE member              
+ SET                        
+     name       = ?,        
+     password   = ?,        
+     birthday   = ?,        
+     u_level    = ?,        
+     login      = ?,        
+     recommend  = ?,        
+     email      = ?,        
+     reg_dt     = SYSDATE   
+ WHERE                      
+         user_id = ?        
+]
+(UserDaoJdbc.java:126) - 3.flag:1
+(DummyMailService.java:13) - ┌─────────────────────────────────────────────────────────┐
+(DummyMailService.java:14) - │ DummyMailService send()                                 │
+(DummyMailService.java:15) - │ 개발에서는 이메일이 전송되지 않습니다	                         │
+(DummyMailService.java:16) - └─────────────────────────────────────────────────────────┘
+(UserServiceImpl.java:133) - ┌──────────────────────────────────────────┐
+(UserServiceImpl.java:134) - │ mail 전송								  │
+(UserServiceImpl.java:135) - └──────────────────────────────────────────┘
+(UserDaoJdbc.java:108) - 1.sql:
+ UPDATE member              
+ SET                        
+     name       = ?,        
+     password   = ?,        
+     birthday   = ?,        
+     u_level    = ?,        
+     login      = ?,        
+     recommend  = ?,        
+     email      = ?,        
+     reg_dt     = SYSDATE   
+ WHERE                      
+         user_id = ?        
+
+(UserDaoJdbc.java:122) - 2.param:사람04
+(UserDaoJdbc.java:122) - 2.param:4444
+(UserDaoJdbc.java:122) - 2.param:2001-02-20
+(UserDaoJdbc.java:122) - 2.param:3
+(UserDaoJdbc.java:122) - 2.param:52
+(UserDaoJdbc.java:122) - 2.param:30
+(UserDaoJdbc.java:122) - 2.param:rkdgur2016@gmail.com
+(UserDaoJdbc.java:122) - 2.param:human04
+(JdbcTemplate.java:958) - Executing prepared SQL update
+(JdbcTemplate.java:640) - Executing prepared SQL statement [ UPDATE member              
+ SET                        
+     name       = ?,        
+     password   = ?,        
+     birthday   = ?,        
+     u_level    = ?,        
+     login      = ?,        
+     recommend  = ?,        
+     email      = ?,        
+     reg_dt     = SYSDATE   
+ WHERE                      
+         user_id = ?        
+]
+(UserDaoJdbc.java:126) - 3.flag:1
+(DummyMailService.java:13) - ┌─────────────────────────────────────────────────────────┐
+(DummyMailService.java:14) - │ DummyMailService send()                                 │
+(DummyMailService.java:15) - │ 개발에서는 이메일이 전송되지 않습니다	                         │
+(DummyMailService.java:16) - └─────────────────────────────────────────────────────────┘
+(UserServiceImpl.java:133) - ┌──────────────────────────────────────────┐
+(UserServiceImpl.java:134) - │ mail 전송								  │
+(UserServiceImpl.java:135) - └──────────────────────────────────────────┘
+(AbstractPlatformTransactionManager.java:741) - Initiating transaction commit
+(DataSourceTransactionManager.java:334) - Committing JDBC transaction on Connection [oracle.jdbc.driver.T4CConnection@503fbbc6]
+(DataSourceTransactionManager.java:393) - Releasing JDBC Connection [oracle.jdbc.driver.T4CConnection@503fbbc6] after transaction
+(UserServiceImplTest.java:205) - ┌──────────────────────────────────────────┐
+(UserServiceImplTest.java:206) - │ checkLevel()                             │
+(UserServiceImplTest.java:207) - └──────────────────────────────────────────┘
+(UserDaoJdbc.java:283) - 2.sql:
+  SELECT                                             
+     user_id,                                        
+     name,                                           
+     password,                                       
+     birthday,                                       
+     u_level,                                        
+     login,                                          
+     recommend,                                      
+     email,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt  
+ FROM                                                
+     member                                          
+ WHERE user_id = ?                                   
+
+(UserDaoJdbc.java:284) - 3.param:
+User [userId=human01, name=사람01, password=1111, birthday=2001-02-17, level=BASIC, login=49, recommend=0, email=rkdgur2016@gmail.com, regDt=sysdate사용, toString()=com.pcwk.ehr.user.domain.User@60e949e1]
+(JdbcTemplate.java:711) - Executing prepared SQL query
+(JdbcTemplate.java:640) - Executing prepared SQL statement [  SELECT                                             
+     user_id,                                        
+     name,                                           
+     password,                                       
+     birthday,                                       
+     u_level,                                        
+     login,                                          
+     recommend,                                      
+     email,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt  
+ FROM                                                
+     member                                          
+ WHERE user_id = ?                                   
+]
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(UserDaoJdbc.java:295) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17, level=BASIC, login=49, recommend=0, email=rkdgur2016@gmail.com, regDt=2024-07-05 11:29:52, toString()=com.pcwk.ehr.user.domain.User@c827db]
+(UserServiceImplTest.java:205) - ┌──────────────────────────────────────────┐
+(UserServiceImplTest.java:206) - │ checkLevel()                             │
+(UserServiceImplTest.java:207) - └──────────────────────────────────────────┘
+(UserDaoJdbc.java:283) - 2.sql:
+  SELECT                                             
+     user_id,                                        
+     name,                                           
+     password,                                       
+     birthday,                                       
+     u_level,                                        
+     login,                                          
+     recommend,                                      
+     email,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt  
+ FROM                                                
+     member                                          
+ WHERE user_id = ?                                   
+
+(UserDaoJdbc.java:284) - 3.param:
+User [userId=human02, name=사람02, password=2222, birthday=2001-02-18, level=BASIC, login=50, recommend=2, email=rkdgur2016@gmail.com, regDt=sysdate사용, toString()=com.pcwk.ehr.user.domain.User@377c68c6]
+(JdbcTemplate.java:711) - Executing prepared SQL query
+(JdbcTemplate.java:640) - Executing prepared SQL statement [  SELECT                                             
+     user_id,                                        
+     name,                                           
+     password,                                       
+     birthday,                                       
+     u_level,                                        
+     login,                                          
+     recommend,                                      
+     email,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt  
+ FROM                                                
+     member                                          
+ WHERE user_id = ?                                   
+]
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(UserDaoJdbc.java:295) - 4.outVO:User [userId=human02, name=사람02, password=2222, birthday=2001-02-18, level=SILVER, login=50, recommend=2, email=rkdgur2016@gmail.com, regDt=2024-07-05 11:29:52, toString()=com.pcwk.ehr.user.domain.User@430fa4ef]
+(UserServiceImplTest.java:205) - ┌──────────────────────────────────────────┐
+(UserServiceImplTest.java:206) - │ checkLevel()                             │
+(UserServiceImplTest.java:207) - └──────────────────────────────────────────┘
+(UserDaoJdbc.java:283) - 2.sql:
+  SELECT                                             
+     user_id,                                        
+     name,                                           
+     password,                                       
+     birthday,                                       
+     u_level,                                        
+     login,                                          
+     recommend,                                      
+     email,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt  
+ FROM                                                
+     member                                          
+ WHERE user_id = ?                                   
+
+(UserDaoJdbc.java:284) - 3.param:
+User [userId=human03, name=사람03, password=3333, birthday=2001-02-19, level=SILVER, login=51, recommend=29, email=rkdgur2016@gmail.com, regDt=sysdate사용, toString()=com.pcwk.ehr.user.domain.User@1761de10]
+(JdbcTemplate.java:711) - Executing prepared SQL query
+(JdbcTemplate.java:640) - Executing prepared SQL statement [  SELECT                                             
+     user_id,                                        
+     name,                                           
+     password,                                       
+     birthday,                                       
+     u_level,                                        
+     login,                                          
+     recommend,                                      
+     email,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt  
+ FROM                                                
+     member                                          
+ WHERE user_id = ?                                   
+]
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(UserDaoJdbc.java:295) - 4.outVO:User [userId=human03, name=사람03, password=3333, birthday=2001-02-19, level=SILVER, login=51, recommend=29, email=rkdgur2016@gmail.com, regDt=2024-07-05 11:29:52, toString()=com.pcwk.ehr.user.domain.User@5bdaf2ce]
+(UserServiceImplTest.java:205) - ┌──────────────────────────────────────────┐
+(UserServiceImplTest.java:206) - │ checkLevel()                             │
+(UserServiceImplTest.java:207) - └──────────────────────────────────────────┘
+(UserDaoJdbc.java:283) - 2.sql:
+  SELECT                                             
+     user_id,                                        
+     name,                                           
+     password,                                       
+     birthday,                                       
+     u_level,                                        
+     login,                                          
+     recommend,                                      
+     email,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt  
+ FROM                                                
+     member                                          
+ WHERE user_id = ?                                   
+
+(UserDaoJdbc.java:284) - 3.param:
+User [userId=human04, name=사람04, password=4444, birthday=2001-02-20, level=SILVER, login=52, recommend=30, email=rkdgur2016@gmail.com, regDt=sysdate사용, toString()=com.pcwk.ehr.user.domain.User@42d236fb]
+(JdbcTemplate.java:711) - Executing prepared SQL query
+(JdbcTemplate.java:640) - Executing prepared SQL statement [  SELECT                                             
+     user_id,                                        
+     name,                                           
+     password,                                       
+     birthday,                                       
+     u_level,                                        
+     login,                                          
+     recommend,                                      
+     email,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt  
+ FROM                                                
+     member                                          
+ WHERE user_id = ?                                   
+]
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(UserDaoJdbc.java:295) - 4.outVO:User [userId=human04, name=사람04, password=4444, birthday=2001-02-20, level=GOLD, login=52, recommend=30, email=rkdgur2016@gmail.com, regDt=2024-07-05 11:29:52, toString()=com.pcwk.ehr.user.domain.User@1532c619]
+(UserServiceImplTest.java:205) - ┌──────────────────────────────────────────┐
+(UserServiceImplTest.java:206) - │ checkLevel()                             │
+(UserServiceImplTest.java:207) - └──────────────────────────────────────────┘
+(UserDaoJdbc.java:283) - 2.sql:
+  SELECT                                             
+     user_id,                                        
+     name,                                           
+     password,                                       
+     birthday,                                       
+     u_level,                                        
+     login,                                          
+     recommend,                                      
+     email,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt  
+ FROM                                                
+     member                                          
+ WHERE user_id = ?                                   
+
+(UserDaoJdbc.java:284) - 3.param:
+User [userId=human05, name=사람05, password=5555, birthday=2001-02-21, level=GOLD, login=55, recommend=32, email=rkdgur2016@gmail.com, regDt=sysdate사용, toString()=com.pcwk.ehr.user.domain.User@46044faa]
+(JdbcTemplate.java:711) - Executing prepared SQL query
+(JdbcTemplate.java:640) - Executing prepared SQL statement [  SELECT                                             
+     user_id,                                        
+     name,                                           
+     password,                                       
+     birthday,                                       
+     u_level,                                        
+     login,                                          
+     recommend,                                      
+     email,                                          
+     TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') reg_dt  
+ FROM                                                
+     member                                          
+ WHERE user_id = ?                                   
+]
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@192.168.0.21:1521:xe]
+(UserDaoJdbc.java:295) - 4.outVO:User [userId=human05, name=사람05, password=5555, birthday=2001-02-21, level=GOLD, login=55, recommend=32, email=rkdgur2016@gmail.com, regDt=2024-07-05 11:29:52, toString()=com.pcwk.ehr.user.domain.User@7de4a01f]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [1408482749] from cache with key [[MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@178213b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+(UserServiceImplTest.java:81) - ┌─────────────────────────────────────────────────────────┐
+(UserServiceImplTest.java:82) - │ tearDown()                                              │
+(UserServiceImplTest.java:83) - └─────────────────────────────────────────────────────────┘
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [1408482749] from cache with key [[MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@178213b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - After test method: context [DefaultTestContext@1224144a testClass = UserServiceImplTest, testInstance = com.pcwk.ehr.user.service.UserServiceImplTest@24959ca4, testMethod = upgradeLevels@UserServiceImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [1408482749] from cache with key [[MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@178213b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:143) - After test class: context [DefaultTestContext@1224144a testClass = UserServiceImplTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@29f7cefd testClass = UserServiceImplTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null].
+(AbstractApplicationContext.java:1063) - Closing org.springframework.context.support.GenericApplicationContext@53f3bdbd, started on Fri Jul 05 11:29:51 GMT+09:00 2024
+(HelloProxyTest.java:16) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:17) - │ @Before setUp()                                 		 │
+(HelloProxyTest.java:18) - └─────────────────────────────────────────────────────────┘
+(HelloProxyTest.java:36) - hello.sayHello("pcwk") : Hello Pcwk
+(HelloProxyTest.java:23) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:24) - │ @@After tearDown()                                 	 │
+(HelloProxyTest.java:25) - └─────────────────────────────────────────────────────────┘
+(HelloProxyTest.java:16) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:17) - │ @Before setUp()                                 		 │
+(HelloProxyTest.java:18) - └─────────────────────────────────────────────────────────┘
+(HelloProxyTest.java:33) - HELLO PCWK
+(HelloProxyTest.java:23) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:24) - │ @@After tearDown()                                 	 │
+(HelloProxyTest.java:25) - └─────────────────────────────────────────────────────────┘
+(HelloProxyTest.java:16) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:17) - │ @Before setUp()                                 		 │
+(HelloProxyTest.java:18) - └─────────────────────────────────────────────────────────┘
+(HelloProxyTest.java:33) - HELLO PCWK
+(HelloProxyTest.java:34) - HI PCWK
+(HelloProxyTest.java:35) - THANK YOU PCWK
+(HelloProxyTest.java:23) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:24) - │ @@After tearDown()                                 	 │
+(HelloProxyTest.java:25) - └─────────────────────────────────────────────────────────┘
+(HelloProxyTest.java:16) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:17) - │ @Before setUp()                                 		 │
+(HelloProxyTest.java:18) - └─────────────────────────────────────────────────────────┘
+(HelloProxyTest.java:34) - HELLO PCWK
+(HelloProxyTest.java:35) - HI PCWK
+(HelloProxyTest.java:36) - THANK YOU PCWK
+(HelloProxyTest.java:23) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:24) - │ @@After tearDown()                                 	 │
+(HelloProxyTest.java:25) - └─────────────────────────────────────────────────────────┘
+(HelloProxyTest.java:16) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:17) - │ @Before setUp()                                 		 │
+(HelloProxyTest.java:18) - └─────────────────────────────────────────────────────────┘
+(HelloProxyTest.java:36) - HELLO PCWK
+(HelloProxyTest.java:37) - HI PCWK
+(HelloProxyTest.java:38) - THANK YOU PCWK
+(HelloProxyTest.java:23) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:24) - │ @@After tearDown()                                 	 │
+(HelloProxyTest.java:25) - └─────────────────────────────────────────────────────────┘
+(HelloProxyTest.java:18) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:19) - │ @Before setUp()                                 		 │
+(HelloProxyTest.java:20) - └─────────────────────────────────────────────────────────┘
+(UpperCaseHandler.java:21) - ┌─────────────────────────────────────────────────────────┐
+(UpperCaseHandler.java:22) - │ @UpperCaseHandler invoke()                              │
+(UpperCaseHandler.java:23) - └─────────────────────────────────────────────────────────┘
+(UpperCaseHandler.java:25) - method name : sayHello
+(UpperCaseHandler.java:26) - args : [Ljava.lang.Object;@47987356
+(UpperCaseHandler.java:30) - ret : Hello Pcwk
+(HelloProxyTest.java:37) - HELLO PCWK
+(HelloProxyTest.java:25) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:26) - │ @@After tearDown()                                 	 │
+(HelloProxyTest.java:27) - └─────────────────────────────────────────────────────────┘
+(HelloProxyTest.java:18) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:19) - │ @Before setUp()                                 		 │
+(HelloProxyTest.java:20) - └─────────────────────────────────────────────────────────┘
+(UpperCaseHandler.java:21) - ┌─────────────────────────────────────────────────────────┐
+(UpperCaseHandler.java:22) - │ @UpperCaseHandler invoke()                              │
+(UpperCaseHandler.java:23) - └─────────────────────────────────────────────────────────┘
+(UpperCaseHandler.java:25) - method name : sayHello
+(UpperCaseHandler.java:26) - args : [Ljava.lang.Object;@47987356
+(UpperCaseHandler.java:30) - ret : Hello Pcwk
+(HelloProxyTest.java:37) - HELLO PCWK
+(UpperCaseHandler.java:21) - ┌─────────────────────────────────────────────────────────┐
+(UpperCaseHandler.java:22) - │ @UpperCaseHandler invoke()                              │
+(UpperCaseHandler.java:23) - └─────────────────────────────────────────────────────────┘
+(UpperCaseHandler.java:25) - method name : sayHi
+(UpperCaseHandler.java:26) - args : [Ljava.lang.Object;@22ef9844
+(UpperCaseHandler.java:30) - ret : Hi Pcwk
+(HelloProxyTest.java:38) - HI PCWK
+(UpperCaseHandler.java:21) - ┌─────────────────────────────────────────────────────────┐
+(UpperCaseHandler.java:22) - │ @UpperCaseHandler invoke()                              │
+(UpperCaseHandler.java:23) - └─────────────────────────────────────────────────────────┘
+(UpperCaseHandler.java:25) - method name : sayThankYou
+(UpperCaseHandler.java:26) - args : [Ljava.lang.Object;@6283d8b8
+(UpperCaseHandler.java:30) - ret : Thank You Pcwk
+(HelloProxyTest.java:39) - THANK YOU PCWK
+(HelloProxyTest.java:25) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:26) - │ @@After tearDown()                                 	 │
+(HelloProxyTest.java:27) - └─────────────────────────────────────────────────────────┘
+(HelloProxyTest.java:18) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:19) - │ @Before setUp()                                 		 │
+(HelloProxyTest.java:20) - └─────────────────────────────────────────────────────────┘
+(UpperCaseHandler.java:21) - ┌─────────────────────────────────────────────────────────┐
+(UpperCaseHandler.java:22) - │ @UpperCaseHandler invoke()                              │
+(UpperCaseHandler.java:23) - └─────────────────────────────────────────────────────────┘
+(UpperCaseHandler.java:25) - method name : sayHello
+(UpperCaseHandler.java:26) - args : [Ljava.lang.Object;@47987356
+(UpperCaseHandler.java:30) - ret : Hello Pcwk
+(HelloProxyTest.java:37) - HELLO PCWK
+(UpperCaseHandler.java:21) - ┌─────────────────────────────────────────────────────────┐
+(UpperCaseHandler.java:22) - │ @UpperCaseHandler invoke()                              │
+(UpperCaseHandler.java:23) - └─────────────────────────────────────────────────────────┘
+(UpperCaseHandler.java:25) - method name : sayHi
+(UpperCaseHandler.java:26) - args : [Ljava.lang.Object;@22ef9844
+(UpperCaseHandler.java:30) - ret : Hi Pcwk
+(HelloProxyTest.java:38) - HI PCWK
+(UpperCaseHandler.java:21) - ┌─────────────────────────────────────────────────────────┐
+(UpperCaseHandler.java:22) - │ @UpperCaseHandler invoke()                              │
+(UpperCaseHandler.java:23) - └─────────────────────────────────────────────────────────┘
+(UpperCaseHandler.java:25) - method name : sayThankYou
+(UpperCaseHandler.java:26) - args : [Ljava.lang.Object;@6283d8b8
+(UpperCaseHandler.java:30) - ret : Thank You Pcwk
+(HelloProxyTest.java:39) - THANK YOU PCWK
+(HelloProxyTest.java:25) - ┌─────────────────────────────────────────────────────────┐
+(HelloProxyTest.java:26) - │ @@After tearDown()                                 	 │
+(HelloProxyTest.java:27) - └─────────────────────────────────────────────────────────┘

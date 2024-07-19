@@ -1,0 +1,270 @@
+(SpringJUnit4ClassRunner.java:139) - SpringJUnit4ClassRunner constructor called with [class com.pcwk.ehr.user.dao.UserMapperTest]
+(BootstrapUtils.java:108) - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+(BootstrapUtils.java:88) - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+(BootstrapUtils.java:143) - Instantiating TestContextBootstrapper for test class [com.pcwk.ehr.user.dao.UserMapperTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+(AbstractDelegatingSmartContextLoader.java:264) - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@34f5090e declaringClass = 'com.pcwk.ehr.user.dao.UserMapperTest', classes = '{}', locations = '{classpath:/applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+(ActiveProfilesUtils.java:80) - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.pcwk.ehr.user.dao.UserMapperTest]
+(AbstractTestContextBootstrapper.java:124) - @TestExecutionListeners is not present for class [com.pcwk.ehr.user.dao.UserMapperTest]: using defaults.
+(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+(AbstractTestContextBootstrapper.java:189) - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@48aca48b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@13fd2ccd, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@b9b00e0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@506ae4d4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7d4f9aae, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@72e5a8e, org.springframework.test.context.event.EventPublishingTestExecutionListener@54e1c68b]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.dao.UserMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.dao.UserMapperTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.dao.UserMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.dao.UserMapperTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.dao.UserMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.dao.UserMapperTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.dao.UserMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.dao.UserMapperTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.dao.UserMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.dao.UserMapperTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.dao.UserMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.dao.UserMapperTest]
+(AbstractDirtiesContextTestExecutionListener.java:143) - Before test class: context [DefaultTestContext@13d73f29 testClass = UserMapperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@565f390 testClass = UserMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.user.dao.UserMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.user.dao.UserMapperTest]
+(DependencyInjectionTestExecutionListener.java:81) - Performing dependency injection for test context [[DefaultTestContext@13d73f29 testClass = UserMapperTest, testInstance = com.pcwk.ehr.user.dao.UserMapperTest@4ee203eb, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@565f390 testClass = UserMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+(AbstractDelegatingSmartContextLoader.java:274) - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@565f390 testClass = UserMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+(AbstractGenericContextLoader.java:107) - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@565f390 testClass = UserMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+(AbstractEnvironment.java:302) - Activating profiles []
+(ClassPathScanningCandidateComponentProvider.java:437) - Identified candidate component class: file [D:\01.JAVA\04.STS_WORKSPACE\sh11_03\target\classes\com\pcwk\ehr\mymapper\dao\MyMapperJdbc.class]
+(ClassPathScanningCandidateComponentProvider.java:437) - Identified candidate component class: file [D:\01.JAVA\04.STS_WORKSPACE\sh11_03\target\classes\com\pcwk\ehr\user\service\UserServiceImpl.class]
+(XmlBeanDefinitionReader.java:393) - Loaded 24 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+(ClassPathScanningCandidateComponentProvider.java:443) - Ignored because not a concrete top-level class: file [D:\01.JAVA\04.STS_WORKSPACE\sh11_03\target\test-classes\com\pcwk\ehr\user\dao\UserMapperTest.class]
+(ClassPathScanningCandidateComponentProvider.java:437) - Identified candidate component class: file [D:\01.JAVA\04.STS_WORKSPACE\sh11_03\target\classes\com\pcwk\ehr\user\dao\UserMapper.class]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'myMapperJdbc'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'sqlSessionTemplate'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'sqlSessionFactoryBean'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(Log4j2SpyLogDelegator.java:372) - log4jdbc-logj2 properties initialization...
+(Log4j2SpyLogDelegator.java:372) - Using logger: null
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.debug.stack.prefix is not defined
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.sqltiming.warn.threshold is not defined
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.sqltiming.error.threshold is not defined
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.statement.warn is not defined (using default value false)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.select is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.insert is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.update is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.delete is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.create is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.drivers is not defined
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.trim.sql is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+(Log4j2SpyLogDelegator.java:372) - log4jdbc-logj2 properties initialization done.
+(Log4j2SpyLogDelegator.java:372) - DriverSpy intialization...
+(Log4j2SpyLogDelegator.java:372) -   FOUND DRIVER oracle.jdbc.OracleDriver
+(Log4j2SpyLogDelegator.java:372) -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+(Log4j2SpyLogDelegator.java:372) - DriverSpy intialization done.
+(LogFactory.java:109) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userServiceImpl'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userMapper'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'txAdvice'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'transactionManager'
+(NameMatchTransactionAttributeSource.java:102) - Adding transactional method [*Tx] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+(NameMatchTransactionAttributeSource.java:102) - Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'jdbcTemplate'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dummyMailService'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mailSenderImpl'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'testUserService'
+(DefaultCacheAwareContextLoaderDelegate.java:92) - Storing ApplicationContext [1819940427] in cache under key [[MergedContextConfiguration@565f390 testClass = UserMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@3e6fd0b9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [1819940427] from cache with key [[MergedContextConfiguration@565f390 testClass = UserMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@3e6fd0b9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - Before test method: context [DefaultTestContext@13d73f29 testClass = UserMapperTest, testInstance = com.pcwk.ehr.user.dao.UserMapperTest@4ee203eb, testMethod = doUpdate@UserMapperTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@565f390 testClass = UserMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [1819940427] from cache with key [[MergedContextConfiguration@565f390 testClass = UserMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@3e6fd0b9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+(UserMapperTest.java:43) - ┌─────────────────────────────────────────────────────────┐
+(UserMapperTest.java:44) - │ setUp()                                                 │
+(UserMapperTest.java:45) - └─────────────────────────────────────────────────────────┘
+(Logger.java:49) - Creating a new SqlSession
+(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75b21c3b] was not registered for synchronization because synchronization is not active
+(DataSourceUtils.java:117) - Fetching JDBC Connection from DataSource
+(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75b21c3b]
+(UserMapperTest.java:185) - ┌─────────────────────────────────────────────────────────┐
+(UserMapperTest.java:186) - │ tearDown()                                              │
+(UserMapperTest.java:187) - └─────────────────────────────────────────────────────────┘
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [1819940427] from cache with key [[MergedContextConfiguration@565f390 testClass = UserMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@3e6fd0b9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - After test method: context [DefaultTestContext@13d73f29 testClass = UserMapperTest, testInstance = com.pcwk.ehr.user.dao.UserMapperTest@4ee203eb, testMethod = doUpdate@UserMapperTest, testException = org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: ORA-01017: 사용자명/비밀번호가 부적합, 로그온할 수 없습니다.
+
+### The error may exist in file [D:\01.JAVA\04.STS_WORKSPACE\sh11_03\target\classes\mapper\user\userMapper.xml]
+### The error may involve com.pcwk.ehr.user.dao.UserMapper.deleteAll
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: ORA-01017: 사용자명/비밀번호가 부적합, 로그온할 수 없습니다.
+, mergedContextConfiguration = [MergedContextConfiguration@565f390 testClass = UserMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [1819940427] from cache with key [[MergedContextConfiguration@565f390 testClass = UserMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@3e6fd0b9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:143) - After test class: context [DefaultTestContext@13d73f29 testClass = UserMapperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@565f390 testClass = UserMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null].
+(AbstractApplicationContext.java:1063) - Closing org.springframework.context.support.GenericApplicationContext@6c7a164b, started on Thu Jul 11 09:00:36 GMT+09:00 2024
+(SpringJUnit4ClassRunner.java:139) - SpringJUnit4ClassRunner constructor called with [class com.pcwk.ehr.time.TimeMapperTest]
+(BootstrapUtils.java:108) - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+(BootstrapUtils.java:88) - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+(BootstrapUtils.java:143) - Instantiating TestContextBootstrapper for test class [com.pcwk.ehr.time.TimeMapperTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+(AbstractDelegatingSmartContextLoader.java:264) - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@34f5090e declaringClass = 'com.pcwk.ehr.time.TimeMapperTest', classes = '{}', locations = '{classpath:/applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+(ActiveProfilesUtils.java:80) - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.pcwk.ehr.time.TimeMapperTest]
+(AbstractTestContextBootstrapper.java:124) - @TestExecutionListeners is not present for class [com.pcwk.ehr.time.TimeMapperTest]: using defaults.
+(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+(AbstractTestContextBootstrapper.java:189) - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@48aca48b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@13fd2ccd, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@b9b00e0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@506ae4d4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7d4f9aae, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@72e5a8e, org.springframework.test.context.event.EventPublishingTestExecutionListener@54e1c68b]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.time.TimeMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.time.TimeMapperTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.time.TimeMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.time.TimeMapperTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.time.TimeMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.time.TimeMapperTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.time.TimeMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.time.TimeMapperTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.time.TimeMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.time.TimeMapperTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.time.TimeMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.time.TimeMapperTest]
+(AbstractDirtiesContextTestExecutionListener.java:143) - Before test class: context [DefaultTestContext@13d73f29 testClass = TimeMapperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@565f390 testClass = TimeMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.time.TimeMapperTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.time.TimeMapperTest]
+(DependencyInjectionTestExecutionListener.java:81) - Performing dependency injection for test context [[DefaultTestContext@13d73f29 testClass = TimeMapperTest, testInstance = com.pcwk.ehr.time.TimeMapperTest@4ee203eb, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@565f390 testClass = TimeMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+(AbstractDelegatingSmartContextLoader.java:274) - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@565f390 testClass = TimeMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+(AbstractGenericContextLoader.java:107) - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@565f390 testClass = TimeMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+(AbstractEnvironment.java:302) - Activating profiles []
+(ClassPathScanningCandidateComponentProvider.java:437) - Identified candidate component class: file [D:\01.JAVA\04.STS_WORKSPACE\sh11_03\target\classes\com\pcwk\ehr\mymapper\dao\MyMapperJdbc.class]
+(ClassPathScanningCandidateComponentProvider.java:437) - Identified candidate component class: file [D:\01.JAVA\04.STS_WORKSPACE\sh11_03\target\classes\com\pcwk\ehr\user\service\UserServiceImpl.class]
+(XmlBeanDefinitionReader.java:393) - Loaded 24 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+(ClassPathScanningCandidateComponentProvider.java:443) - Ignored because not a concrete top-level class: file [D:\01.JAVA\04.STS_WORKSPACE\sh11_03\target\test-classes\com\pcwk\ehr\user\dao\UserMapperTest.class]
+(ClassPathScanningCandidateComponentProvider.java:437) - Identified candidate component class: file [D:\01.JAVA\04.STS_WORKSPACE\sh11_03\target\classes\com\pcwk\ehr\user\dao\UserMapper.class]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'myMapperJdbc'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'sqlSessionTemplate'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'sqlSessionFactoryBean'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(Log4j2SpyLogDelegator.java:372) - log4jdbc-logj2 properties initialization...
+(Log4j2SpyLogDelegator.java:372) - Using logger: null
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.debug.stack.prefix is not defined
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.sqltiming.warn.threshold is not defined
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.sqltiming.error.threshold is not defined
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.statement.warn is not defined (using default value false)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.select is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.insert is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.update is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.delete is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.create is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.drivers is not defined
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.trim.sql is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+(Log4j2SpyLogDelegator.java:372) - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+(Log4j2SpyLogDelegator.java:372) - log4jdbc-logj2 properties initialization done.
+(Log4j2SpyLogDelegator.java:372) - DriverSpy intialization...
+(Log4j2SpyLogDelegator.java:372) -   FOUND DRIVER oracle.jdbc.OracleDriver
+(Log4j2SpyLogDelegator.java:372) -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+(Log4j2SpyLogDelegator.java:372) - DriverSpy intialization done.
+(LogFactory.java:109) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userServiceImpl'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userMapper'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'txAdvice'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'transactionManager'
+(NameMatchTransactionAttributeSource.java:102) - Adding transactional method [*Tx] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-Exception]
+(NameMatchTransactionAttributeSource.java:102) - Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'jdbcTemplate'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dummyMailService'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mailSenderImpl'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'testUserService'
+(DefaultCacheAwareContextLoaderDelegate.java:92) - Storing ApplicationContext [1819940427] in cache under key [[MergedContextConfiguration@565f390 testClass = TimeMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@3e6fd0b9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+(TestContextManager.java:252) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@b9b00e0] to prepare test instance [com.pcwk.ehr.time.TimeMapperTest@4ee203eb]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.pcwk.ehr.time.TimeMapperTest': Unsatisfied dependency expressed through field 'timeMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pcwk.ehr.time.dao.TimeMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:713) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:693) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:408) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:417) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.jar:4.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.jar:4.13]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.jar:4.13]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.jar:4.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.13.jar:4.13]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115) ~[junit-4.13.jar:4.13]
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:43) ~[junit-vintage-engine-5.7.0.jar:5.7.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) ~[?:1.8.0_202]
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source) ~[?:1.8.0_202]
+	at java.util.Iterator.forEachRemaining(Unknown Source) ~[?:1.8.0_202]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source) ~[?:1.8.0_202]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) ~[?:1.8.0_202]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) ~[?:1.8.0_202]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source) ~[?:1.8.0_202]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source) ~[?:1.8.0_202]
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source) ~[?:1.8.0_202]
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source) ~[?:1.8.0_202]
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:82) ~[junit-vintage-engine-5.7.0.jar:5.7.0]
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:73) ~[junit-vintage-engine-5.7.0.jar:5.7.0]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) ~[junit-platform-launcher-1.7.0.jar:1.7.0]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.7.0.jar:1.7.0]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.7.0.jar:1.7.0]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) [junit-platform-launcher-1.7.0.jar:1.7.0]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) [junit-platform-launcher-1.7.0.jar:1.7.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96) [junit-platform-launcher-1.7.0.jar:1.7.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:84) [junit-platform-launcher-1.7.0.jar:1.7.0]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pcwk.ehr.time.dao.TimeMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:710) ~[spring-beans-5.3.37.jar:5.3.37]
+	... 52 more
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [1819940427] from cache with key [[MergedContextConfiguration@565f390 testClass = TimeMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@3e6fd0b9 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:143) - After test class: context [DefaultTestContext@13d73f29 testClass = TimeMapperTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@565f390 testClass = TimeMapperTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null].
+(AbstractApplicationContext.java:1063) - Closing org.springframework.context.support.GenericApplicationContext@6c7a164b, started on Thu Jul 11 09:00:58 GMT+09:00 2024

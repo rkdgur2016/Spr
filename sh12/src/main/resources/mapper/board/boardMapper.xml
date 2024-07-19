@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pcwk.ehr.mapper.BoardMapper">
+
+	   <sql id="doRetrieveWhere">
+        <where>
+            <choose>
+             <when test="searchDiv !=null and searchDiv == '10'">
+                  user_id LIKE #{searchWord} ||'%' 
+             </when>
+            
+             <when test="searchDiv !=null and searchDiv == '20'">
+                  name LIKE  #{searchWord} ||'%'
+             </when>
+            
+             <when test="searchDiv !=null and searchDiv == '30'">
+                  email LIKE  #{searchWord} ||'%'
+             </when>                
+             <when test="searchDiv !=null and searchDiv == '40'">
+                  birthday LIKE  #{searchWord} ||'%'
+             </when>                    
+            </choose>
+        </where>     
+    </sql>
+    
+    <select  id="doRetrieve" parameterType="com.pcwk.ehr.cmn.Search" resultType="Board">
+     
+     SELECT A.*,B.*                                                                       
+     FROM (                                                                               
+         SELECT TT1.rnum as no,                                                           
+                TT1.user_id as userId,                                                              
+                TT1.name,                                                                 
+                TT1.password,                                                             
+                TT1.birthday,                                                             
+                DECODE(TT1.u_level,1,'BASIC',2,'SILVER',3,'GOLD') "level" ,                                                              
+                TT1.login,                                                                
+                TT1.recommend,                                                            
+                TT1.email,                                                                
+                DECODE( TO_CHAR(TT1.reg_dt,'YYYYMMDD'), TO_CHAR(SYSDATE,'YYYYMMDD'),      
+                         TO_CHAR(TT1.reg_dt,'HH24:MI'),TO_CHAR(TT1.reg_dt,'YYYY/MM/DD')   
+                 ) AS regDt                                                              
+         FROM (                                                                           
+             SELECT ROWNUM AS rnum, T1.*                                                  
+             FROM (                                                                       
+                 SELECT *                                                                 
+                   FROM member                          
+                   --where<include refid="doRetrieveWhere"></include>                             
+                  ORDER BY reg_dt DESC                                                    
+             )T1                                                                          
+             WHERE ROWNUM <![CDATA[ <= (#{pageSize} * (#{pageNo} -1)+#{pageSize})   ]]>                                                        
+         )TT1                                                                             
+         WHERE TT1.rnum <![CDATA[ >= (#{pageSize} * (#{pageNo} -1)+1)      ]]>                                                              
+     )A                                                                                   
+     CROSS JOIN                                                                           
+     (                                                                                    
+         SELECT COUNT(*) totalCnt                                                         
+           FROM member                                                                    
+           <include refid="doRetrieveWhere"></include>                                                                 
+     )B        
+    </select>
+	<select id="doSelectOne" parameterType="Board" resultType="Board">
+		SELECT
+		    seq,
+		    div,
+		    title,
+		    contents,
+		    read_cnt as readCnt,
+		    reg_id as regId,
+		    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') as regDt,
+		    mod_id as modId,
+		    TO_CHAR(reg_dt,'YYYY-MM-DD HH24:MI:SS') as modDt
+		FROM
+		    board
+		WHERE seq = #{seq}
+	</select>
+	
+	
+	<select id="getSequence" parameterType="Board" resultType="int">
+		SELECT MAX(SEQ) seq
+		  FROM board
+	</select>
+	
+	<insert id="doSave" parameterType="Board">
+		INSERT INTO board (
+		    div,
+		    title,
+		    contents,
+		    read_cnt,
+		    reg_id,
+		    reg_dt,
+		    mod_id,
+		    mod_dt
+		) VALUES (
+		    #{div},     
+		    #{title},   
+		    #{contents},
+		    #{readCnt},
+		    #{regId},  
+		    SYSDATE,  
+		    #{modId},  
+		    SYSDATE
+		)
+	</insert>
+	
+	<delete id="deleteAll" parameterType="Board">
+		DELETE FROM board
+	</delete>
+	
+</mapper>

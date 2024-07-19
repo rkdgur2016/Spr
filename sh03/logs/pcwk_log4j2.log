@@ -1,0 +1,1791 @@
+(JUnitLifeCycle.java:19) - ====================
+(JUnitLifeCycle.java:20) - @BeforeClass()
+(JUnitLifeCycle.java:21) - ====================
+(JUnitLifeCycle.java:33) - ====================
+(JUnitLifeCycle.java:34) - @Before()
+(JUnitLifeCycle.java:35) - ====================
+(JUnitLifeCycle.java:48) - ====================
+(JUnitLifeCycle.java:49) - @test()
+(JUnitLifeCycle.java:50) - ====================
+(JUnitLifeCycle.java:40) - ====================
+(JUnitLifeCycle.java:41) - @After()
+(JUnitLifeCycle.java:42) - ====================
+(JUnitLifeCycle.java:26) - ====================
+(JUnitLifeCycle.java:27) - @AfterClass()
+(JUnitLifeCycle.java:28) - ====================
+(JUnitLifeCycle.java:19) - ====================
+(JUnitLifeCycle.java:20) - @BeforeClass()
+(JUnitLifeCycle.java:21) - ====================
+(JUnitLifeCycle.java:33) - ====================
+(JUnitLifeCycle.java:34) - @Before()
+(JUnitLifeCycle.java:35) - ====================
+(JUnitLifeCycle.java:48) - ====================
+(JUnitLifeCycle.java:49) - @test()
+(JUnitLifeCycle.java:50) - ====================
+(JUnitLifeCycle.java:40) - ====================
+(JUnitLifeCycle.java:41) - @After()
+(JUnitLifeCycle.java:42) - ====================
+(JUnitLifeCycle.java:33) - ====================
+(JUnitLifeCycle.java:34) - @Before()
+(JUnitLifeCycle.java:35) - ====================
+(JUnitLifeCycle.java:56) - ====================
+(JUnitLifeCycle.java:57) - @test2()
+(JUnitLifeCycle.java:58) - ====================
+(JUnitLifeCycle.java:40) - ====================
+(JUnitLifeCycle.java:41) - @After()
+(JUnitLifeCycle.java:42) - ====================
+(JUnitLifeCycle.java:26) - ====================
+(JUnitLifeCycle.java:27) - @AfterClass()
+(JUnitLifeCycle.java:28) - ====================
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 3 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(AbstractApplicationContext.java:599) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.pcwk.ehr.NConnectionMaker] for bean with name 'connectionMaker' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.pcwk.ehr.NConnectionMaker
+(XmlBeanDefinitionReader.java:393) - Loaded 3 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(AbstractApplicationContext.java:599) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.pcwk.ehr.NConnectionMaker] for bean with name 'connectionMaker' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.pcwk.ehr.NConnectionMaker
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 3 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(AbstractApplicationContext.java:599) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.pcwk.ehr.NConnectionMaker] for bean with name 'connectionMaker' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.pcwk.ehr.NConnectionMaker
+(XmlBeanDefinitionReader.java:393) - Loaded 3 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(AbstractApplicationContext.java:599) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.pcwk.ehr.NConnectionMaker] for bean with name 'connectionMaker' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.pcwk.ehr.NConnectionMaker
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 12:29:25 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:61) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:64) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:67) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:70) - 4. flag : 3
+(UserDaoTest.java:54) - cnt : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:33) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:35) - 3. conn : oracle.jdbc.driver.T4CConnection@324a0017
+(UserDao.java:38) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@2445445a
+(UserDao.java:41) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@52d645b1
+(UserDao.java:46) - 5. count : 0
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:94) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:95) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:104) - 4. flag : 
+ : 1
+(UserDaoTest.java:60) - flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:117) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:127) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:128) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:145) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:67) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:68) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:94) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:95) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:104) - 4. flag : 
+ : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:33) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:35) - 3. conn : oracle.jdbc.driver.T4CConnection@18b0930f
+(UserDao.java:38) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@3a1dd365
+(UserDao.java:41) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@395b56bb
+(UserDao.java:46) - 5. count : 2
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@52d239ba, started on Fri Jun 28 12:29:26 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@7b5a12ae
+(UserDaoTest.java:91) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 12:42:51 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 2
+(UserDaoTest.java:54) - cnt : 2
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@324a0017
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@2445445a
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@52d645b1
+(UserDao.java:47) - 5. count : 0
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:60) - flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:67) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:68) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@18b0930f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@3a1dd365
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@395b56bb
+(UserDao.java:47) - 5. count : 2
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@52d239ba, started on Fri Jun 28 12:42:51 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@7b5a12ae
+(UserDaoTest.java:92) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 12:42:54 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 2
+(UserDaoTest.java:54) - cnt : 2
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@324a0017
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@2445445a
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@52d645b1
+(UserDao.java:47) - 5. count : 0
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:60) - flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:67) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:68) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@18b0930f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@3a1dd365
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@395b56bb
+(UserDao.java:47) - 5. count : 2
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@52d239ba, started on Fri Jun 28 12:42:55 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@7b5a12ae
+(UserDaoTest.java:92) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 12:46:55 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 2
+(UserDaoTest.java:54) - cnt : 2
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@324a0017
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@2445445a
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@52d645b1
+(UserDao.java:47) - 5. count : 0
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:60) - flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:67) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:68) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:74) - userVO : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDaoTest.java:75) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:81) - userVO : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDaoTest.java:82) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@395b56bb
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@256f8274
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@68044f4
+(UserDao.java:47) - 5. count : 3
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@68fa0ba8, started on Fri Jun 28 12:46:56 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@1af687fe
+(UserDaoTest.java:103) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 14:09:36 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 3
+(UserDaoTest.java:54) - cnt : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@324a0017
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@2445445a
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@52d645b1
+(UserDao.java:47) - 5. count : 0
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:60) - flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:67) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:68) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:74) - userVO : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDaoTest.java:75) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:81) - userVO : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDaoTest.java:82) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@395b56bb
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@256f8274
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@68044f4
+(UserDao.java:47) - 5. count : 3
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@68fa0ba8, started on Fri Jun 28 14:09:36 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@1af687fe
+(UserDaoTest.java:103) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@7a1234bf, started on Fri Jun 28 14:10:08 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@5cc69cfe
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@59221b97
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@62e7dffa
+(UserDao.java:71) - 4. flag : 3
+(UserDaoTest.java:54) - cnt : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@4e2916c3
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@60d1b21f
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@3fd2322d
+(UserDao.java:47) - 5. count : 0
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:60) - flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@d5ce97f
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:67) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:68) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:74) - userVO : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDaoTest.java:75) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:81) - userVO : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDaoTest.java:82) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@112d1c8e
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@3d49fd31
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@4016ccc1
+(UserDao.java:47) - 5. count : 3
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@3b2f4a93, started on Fri Jun 28 14:10:09 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@2e3f79a2
+(UserDaoTest.java:103) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 14:10:32 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 3
+(UserDaoTest.java:54) - cnt : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@324a0017
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@2445445a
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@52d645b1
+(UserDao.java:47) - 5. count : 0
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:60) - flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:67) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:68) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@5c10f1c3, started on Fri Jun 28 14:10:33 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@5a411614
+(UserDaoTest.java:103) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 14:13:43 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 2
+(UserDaoTest.java:54) - cnt : 2
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@324a0017
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@2445445a
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@52d645b1
+(UserDao.java:47) - 5. count : 0
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:60) - flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@655ef322
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@7e276594
+(UserDao.java:47) - 5. count : 1
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@54e22bdd, started on Fri Jun 28 14:13:43 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@4b9df8a
+(UserDaoTest.java:114) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 14:16:58 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 1
+(UserDaoTest.java:61) - cnt : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@324a0017
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@2445445a
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@52d645b1
+(UserDao.java:47) - 5. count : 0
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:67) - flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@655ef322
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@7e276594
+(UserDao.java:47) - 5. count : 1
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@54e22bdd, started on Fri Jun 28 14:16:59 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@4b9df8a
+(UserDaoTest.java:49) - ===================
+(UserDaoTest.java:50) - Faliure()
+(UserDaoTest.java:51) - ===================
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@5e8ac0e1, started on Fri Jun 28 14:16:59 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@3a0d172f
+(UserDaoTest.java:121) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 14:17:36 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 1
+(UserDaoTest.java:61) - cnt : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:64) - flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@4612b856
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@22875539
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@c055c54
+(UserDao.java:47) - 5. count : 1
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@3c9bfddc, started on Fri Jun 28 14:17:37 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@13e547a9
+(UserDaoTest.java:49) - ===================
+(UserDaoTest.java:50) - Faliure()
+(UserDaoTest.java:51) - ===================
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@3fb6cf60, started on Fri Jun 28 14:17:37 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@78365cfa
+(UserDaoTest.java:122) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 14:20:13 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 1
+(UserDaoTest.java:72) - cnt : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:75) - flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@4612b856
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@22875539
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@c055c54
+(UserDao.java:47) - 5. count : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:87) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:88) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@18b0930f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@3a1dd365
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@395b56bb
+(UserDao.java:47) - 5. count : 2
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@52de51b6, started on Fri Jun 28 14:20:14 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@424fd310
+(UserDaoTest.java:49) - ===================
+(UserDaoTest.java:50) - Faliure()
+(UserDaoTest.java:51) - ===================
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@38f116f6
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@5286c33a
+(UserDao.java:71) - 4. flag : 2
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@85e6769, started on Fri Jun 28 14:20:14 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@32811494
+(UserDaoTest.java:130) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 14:20:48 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 1
+(UserDaoTest.java:77) - cnt : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:80) - flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@4612b856
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@22875539
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@c055c54
+(UserDao.java:47) - 5. count : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:92) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:93) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@18b0930f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@3a1dd365
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@395b56bb
+(UserDao.java:47) - 5. count : 2
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@52de51b6, started on Fri Jun 28 14:20:49 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@424fd310
+(UserDaoTest.java:49) - ===================
+(UserDaoTest.java:50) - Faliure()
+(UserDaoTest.java:51) - ===================
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@38f116f6
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@5286c33a
+(UserDao.java:71) - 4. flag : 2
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@c5ee75e
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=user_id없음, name=사람01, password=1111, birthday=2001-02-17]
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@48a12036, started on Fri Jun 28 14:20:49 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@53dacd14
+(UserDaoTest.java:135) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 14:23:42 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 1
+(UserDaoTest.java:77) - cnt : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:80) - 1.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@4612b856
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@22875539
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@c055c54
+(UserDao.java:47) - 5. count : 1
+(UserDaoTest.java:84) - 1.2 조회 : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:93) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:94) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:98) - 2.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@18b0930f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@3a1dd365
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@395b56bb
+(UserDao.java:47) - 5. count : 2
+(UserDaoTest.java:102) - 2.2 조회 : 2
+(UserDaoTest.java:105) - userVO : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@68044f4
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:146) - 4.outVO:User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:113) - 3.1 등록 flag : 1
+(UserDaoTest.java:116) - userVO : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDaoTest.java:117) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@2f05be7f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@640f11a1
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@5c10f1c3
+(UserDao.java:47) - 5. count : 3
+(UserDaoTest.java:120) - 3.2 조회 : 3
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@1755e85b, started on Fri Jun 28 14:23:43 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@48a12036
+(UserDaoTest.java:49) - ===================
+(UserDaoTest.java:50) - Faliure()
+(UserDaoTest.java:51) - ===================
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@70efb718
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@b70da4c
+(UserDao.java:71) - 4. flag : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@4e70a728
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=user_id없음, name=사람01, password=1111, birthday=2001-02-17]
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@696f0212, started on Fri Jun 28 14:23:43 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@4bd1f8dd
+(UserDaoTest.java:141) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 14:24:21 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 1
+(UserDaoTest.java:77) - cnt : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:80) - 1.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@4612b856
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@22875539
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@c055c54
+(UserDao.java:47) - 5. count : 1
+(UserDaoTest.java:84) - 1.2 조회 : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:93) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:94) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:98) - 2.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@18b0930f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@3a1dd365
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@395b56bb
+(UserDao.java:47) - 5. count : 2
+(UserDaoTest.java:102) - 2.2 조회 : 2
+(UserDaoTest.java:105) - userVO : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@68044f4
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:146) - 4.outVO:User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:113) - 3.1 등록 flag : 1
+(UserDaoTest.java:116) - userVO : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDaoTest.java:117) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@2f05be7f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@640f11a1
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@5c10f1c3
+(UserDao.java:47) - 5. count : 3
+(UserDaoTest.java:120) - 3.2 조회 : 3
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@1755e85b, started on Fri Jun 28 14:24:22 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@48a12036
+(UserDaoTest.java:49) - ===================
+(UserDaoTest.java:50) - Faliure()
+(UserDaoTest.java:51) - ===================
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@70efb718
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@b70da4c
+(UserDao.java:71) - 4. flag : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@4e70a728
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=user_id없음, name=사람01, password=1111, birthday=2001-02-17]
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@696f0212, started on Fri Jun 28 14:24:22 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@4bd1f8dd
+(UserDaoTest.java:141) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 14:25:31 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 1
+(UserDaoTest.java:77) - cnt : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:80) - 1.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@4612b856
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@22875539
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@c055c54
+(UserDao.java:47) - 5. count : 1
+(UserDaoTest.java:84) - 1.2 조회 : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:93) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:94) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:98) - 2.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@18b0930f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@3a1dd365
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@395b56bb
+(UserDao.java:47) - 5. count : 2
+(UserDaoTest.java:102) - 2.2 조회 : 2
+(UserDaoTest.java:105) - userVO : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@68044f4
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:146) - 4.outVO:User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:113) - 3.1 등록 flag : 1
+(UserDaoTest.java:116) - userVO : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDaoTest.java:117) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@2f05be7f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@640f11a1
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@5c10f1c3
+(UserDao.java:47) - 5. count : 3
+(UserDaoTest.java:120) - 3.2 조회 : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@78365cfa
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:146) - 4.outVO:User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@52de51b6, started on Fri Jun 28 14:25:31 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@424fd310
+(UserDaoTest.java:49) - ===================
+(UserDaoTest.java:50) - Faliure()
+(UserDaoTest.java:51) - ===================
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@38f116f6
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@5286c33a
+(UserDao.java:71) - 4. flag : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@85e6769
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=user_id없음, name=사람01, password=1111, birthday=2001-02-17]
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@5733f295, started on Fri Jun 28 14:25:31 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@7096b474
+(UserDaoTest.java:141) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 14:26:13 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 1
+(UserDaoTest.java:77) - cnt : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:80) - 1.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@4612b856
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@22875539
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@c055c54
+(UserDao.java:47) - 5. count : 1
+(UserDaoTest.java:84) - 1.2 조회 : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:93) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:94) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:98) - 2.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@18b0930f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@3a1dd365
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@395b56bb
+(UserDao.java:47) - 5. count : 2
+(UserDaoTest.java:102) - 2.2 조회 : 2
+(UserDaoTest.java:105) - userVO : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@68044f4
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:146) - 4.outVO:User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:113) - 3.1 등록 flag : 1
+(UserDaoTest.java:116) - userVO : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDaoTest.java:117) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@2f05be7f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@640f11a1
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@5c10f1c3
+(UserDao.java:47) - 5. count : 3
+(UserDaoTest.java:120) - 3.2 조회 : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@78365cfa
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:146) - 4.outVO:User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@52de51b6, started on Fri Jun 28 14:26:14 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@424fd310
+(UserDaoTest.java:49) - ===================
+(UserDaoTest.java:50) - Faliure()
+(UserDaoTest.java:51) - ===================
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@38f116f6
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@5286c33a
+(UserDao.java:71) - 4. flag : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@85e6769
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=user_id없음, name=사람01, password=1111, birthday=2001-02-17]
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@c5ee75e, started on Fri Jun 28 14:26:14 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@4795ded0
+(UserDaoTest.java:141) - beans()
+(UserDaoTest.java:29) - setUpBeforeClass() : 
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 14:27:36 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 1
+(UserDaoTest.java:77) - cnt : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:80) - 1.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@4612b856
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@22875539
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@c055c54
+(UserDao.java:47) - 5. count : 1
+(UserDaoTest.java:84) - 1.2 조회 : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:93) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:94) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:98) - 2.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@18b0930f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@3a1dd365
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@395b56bb
+(UserDao.java:47) - 5. count : 2
+(UserDaoTest.java:102) - 2.2 조회 : 2
+(UserDaoTest.java:105) - userVO : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@68044f4
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:146) - 4.outVO:User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:113) - 3.1 등록 flag : 1
+(UserDaoTest.java:116) - userVO : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDaoTest.java:117) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@2f05be7f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@640f11a1
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@5c10f1c3
+(UserDao.java:47) - 5. count : 3
+(UserDaoTest.java:120) - 3.2 조회 : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@78365cfa
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:146) - 4.outVO:User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@52de51b6, started on Fri Jun 28 14:27:36 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@424fd310
+(UserDaoTest.java:49) - ===================
+(UserDaoTest.java:50) - Faliure()
+(UserDaoTest.java:51) - ===================
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@38f116f6
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@5286c33a
+(UserDao.java:71) - 4. flag : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@85e6769
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=user_id없음, name=사람01, password=1111, birthday=2001-02-17]
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:37) - context : org.springframework.context.support.GenericXmlApplicationContext@c5ee75e, started on Fri Jun 28 14:27:36 GMT+09:00 2024
+(UserDaoTest.java:39) - dao : com.pcwk.ehr.UserDao@4795ded0
+(UserDaoTest.java:141) - beans()
+(UserDaoTest.java:29) - ===================
+(UserDaoTest.java:30) - setUpBeforeClass() : 
+(UserDaoTest.java:31) - ===================
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:39) - context : org.springframework.context.support.GenericXmlApplicationContext@a9cd3b1, started on Fri Jun 28 14:28:14 GMT+09:00 2024
+(UserDaoTest.java:41) - dao : com.pcwk.ehr.UserDao@54a7079e
+(UserDaoTest.java:74) - ===================
+(UserDaoTest.java:75) - addAndGet()
+(UserDaoTest.java:76) - ===================
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@4d0d9fe7
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@142269f2
+(UserDao.java:71) - 4. flag : 1
+(UserDaoTest.java:82) - cnt : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:85) - 1.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@4612b856
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@22875539
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@c055c54
+(UserDao.java:47) - 5. count : 1
+(UserDaoTest.java:89) - 1.2 조회 : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@73173f63
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:146) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:98) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:99) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:103) - 2.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@18b0930f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@3a1dd365
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@395b56bb
+(UserDao.java:47) - 5. count : 2
+(UserDaoTest.java:107) - 2.2 조회 : 2
+(UserDaoTest.java:110) - userVO : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@68044f4
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:146) - 4.outVO:User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(UserDaoTest.java:118) - 3.1 등록 flag : 1
+(UserDaoTest.java:121) - userVO : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDaoTest.java:122) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@2f05be7f
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@640f11a1
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@5c10f1c3
+(UserDao.java:47) - 5. count : 3
+(UserDaoTest.java:125) - 3.2 조회 : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@78365cfa
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:146) - 4.outVO:User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:39) - context : org.springframework.context.support.GenericXmlApplicationContext@52de51b6, started on Fri Jun 28 14:28:15 GMT+09:00 2024
+(UserDaoTest.java:41) - dao : com.pcwk.ehr.UserDao@424fd310
+(UserDaoTest.java:51) - ===================
+(UserDaoTest.java:52) - Faliure()
+(UserDaoTest.java:53) - ===================
+(UserDao.java:62) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:65) - 3. Connection : oracle.jdbc.driver.T4CConnection@38f116f6
+(UserDao.java:68) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@5286c33a
+(UserDao.java:71) - 4. flag : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:95) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:96) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:105) - 4. flag : 
+ : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:118) - 1. conn : oracle.jdbc.driver.T4CConnection@85e6769
+(UserDao.java:128) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:129) - 3. param : 
+ : User [userId=user_id없음, name=사람01, password=1111, birthday=2001-02-17]
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(UserDaoTest.java:39) - context : org.springframework.context.support.GenericXmlApplicationContext@c5ee75e, started on Fri Jun 28 14:28:15 GMT+09:00 2024
+(UserDaoTest.java:41) - dao : com.pcwk.ehr.UserDao@4795ded0
+(UserDaoTest.java:146) - beans()

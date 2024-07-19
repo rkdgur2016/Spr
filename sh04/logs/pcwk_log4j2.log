@@ -1,0 +1,502 @@
+(SpringJUnit4ClassRunner.java:139) - SpringJUnit4ClassRunner constructor called with [class com.pcwk.ehr.UserDaoTest]
+(BootstrapUtils.java:108) - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+(BootstrapUtils.java:88) - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+(BootstrapUtils.java:143) - Instantiating TestContextBootstrapper for test class [com.pcwk.ehr.UserDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+(AbstractDelegatingSmartContextLoader.java:264) - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@1eb5174b declaringClass = 'com.pcwk.ehr.UserDaoTest', classes = '{}', locations = '{classpath:/applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+(ActiveProfilesUtils.java:80) - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.pcwk.ehr.UserDaoTest]
+(AbstractTestContextBootstrapper.java:124) - @TestExecutionListeners is not present for class [com.pcwk.ehr.UserDaoTest]: using defaults.
+(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+(AbstractTestContextBootstrapper.java:189) - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e1a0406, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3cebbb30, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@12aba8be, org.springframework.test.context.support.DirtiesContextTestExecutionListener@290222c1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@67f639d3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6253c26, org.springframework.test.context.event.EventPublishingTestExecutionListener@49049a04]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(AbstractDirtiesContextTestExecutionListener.java:143) - Before test class: context [DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+(UserDaoTest.java:38) - ===================
+(UserDaoTest.java:39) - setUpBeforeClass() : 
+(UserDaoTest.java:40) - ===================
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(DependencyInjectionTestExecutionListener.java:81) - Performing dependency injection for test context [[DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@49c90a9c, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+(AbstractDelegatingSmartContextLoader.java:274) - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+(AbstractGenericContextLoader.java:107) - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+(AbstractEnvironment.java:302) - Activating profiles []
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(DefaultCacheAwareContextLoaderDelegate.java:92) - Storing ApplicationContext [442199874] in cache under key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - Before test method: context [DefaultTestContext@ec8bbb2 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@49c90a9c, testMethod = addAndGet@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+(UserDaoTest.java:47) - context : org.springframework.context.support.GenericApplicationContext@1a5b6f42, started on Mon Jul 01 09:16:45 GMT+09:00 2024
+(UserDaoTest.java:49) - dao : com.pcwk.ehr.UserDao@33c8d7ea
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+(UserDaoTest.java:88) - ===================
+(UserDaoTest.java:89) - addAndGet()
+(UserDaoTest.java:90) - ===================
+(UserDaoTest.java:95) - ───────────────────────
+(UserDaoTest.java:96) - 1번 
+(UserDaoTest.java:97) - ───────────────────────
+(UserDao.java:63) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:66) - 3. Connection : oracle.jdbc.driver.T4CConnection@7cee6d58
+(UserDao.java:69) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@1243ee63
+(UserDao.java:72) - 4. flag : 1
+(UserDaoTest.java:99) - cnt : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:96) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:97) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:106) - 4. flag : 
+ : 1
+(UserDaoTest.java:102) - 1.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:35) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:37) - 3. conn : oracle.jdbc.driver.T4CConnection@3c645e91
+(UserDao.java:40) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@31f17468
+(UserDao.java:43) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@5d9d0355
+(UserDao.java:48) - 5. count : 1
+(UserDaoTest.java:106) - 1.2 조회 : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:119) - 1. conn : oracle.jdbc.driver.T4CConnection@73840664
+(UserDao.java:129) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:130) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:147) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:115) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:116) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:119) - ───────────────────────
+(UserDaoTest.java:120) - 2번 
+(UserDaoTest.java:121) - ───────────────────────
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:96) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:97) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:106) - 4. flag : 
+ : 1
+(UserDaoTest.java:123) - 2.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:35) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:37) - 3. conn : oracle.jdbc.driver.T4CConnection@380dacb1
+(UserDao.java:40) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@5adfa20
+(UserDao.java:43) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@54543703
+(UserDao.java:48) - 5. count : 2
+(UserDaoTest.java:127) - 2.2 조회 : 2
+(UserDaoTest.java:130) - userVO : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:119) - 1. conn : oracle.jdbc.driver.T4CConnection@668d5b5
+(UserDao.java:129) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:130) - 3. param : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:147) - 4.outVO:User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDaoTest.java:137) - ───────────────────────
+(UserDaoTest.java:138) - 3번 
+(UserDaoTest.java:139) - ───────────────────────
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:96) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:97) - 3. User : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:106) - 4. flag : 
+ : 1
+(UserDaoTest.java:141) - 3.1 등록 flag : 1
+(UserDaoTest.java:144) - userVO : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDaoTest.java:145) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:35) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:37) - 3. conn : oracle.jdbc.driver.T4CConnection@db4fe99
+(UserDao.java:40) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@281ee5bb
+(UserDao.java:43) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@18173776
+(UserDao.java:48) - 5. count : 3
+(UserDaoTest.java:148) - 3.2 조회 : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:119) - 1. conn : oracle.jdbc.driver.T4CConnection@6f09a732
+(UserDao.java:129) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:130) - 3. param : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:147) - 4.outVO:User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - After test method: context [DefaultTestContext@ec8bbb2 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@49c90a9c, testMethod = addAndGet@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(DependencyInjectionTestExecutionListener.java:81) - Performing dependency injection for test context [[DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@736caf7a, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - Before test method: context [DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@736caf7a, testMethod = getFailure@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+(UserDaoTest.java:47) - context : org.springframework.context.support.GenericApplicationContext@1a5b6f42, started on Mon Jul 01 09:16:45 GMT+09:00 2024
+(UserDaoTest.java:49) - dao : com.pcwk.ehr.UserDao@33c8d7ea
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+(UserDaoTest.java:60) - ===================
+(UserDaoTest.java:61) - Faliure()
+(UserDaoTest.java:62) - ===================
+(UserDao.java:63) - 2. sql : 
+ DELETE FROM member 
+
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:66) - 3. Connection : oracle.jdbc.driver.T4CConnection@63f8276e
+(UserDao.java:69) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@6127a7e
+(UserDao.java:72) - 4. flag : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:96) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:97) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:106) - 4. flag : 
+ : 1
+(UserDaoTest.java:77) - ───────────────────────
+(UserDaoTest.java:78) - failure : user_id 없음 
+(UserDaoTest.java:79) - userVO01 : User [userId=user_id없음, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:80) - ───────────────────────
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:119) - 1. conn : oracle.jdbc.driver.T4CConnection@635572a7
+(UserDao.java:129) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:130) - 3. param : 
+ : User [userId=user_id없음, name=사람01, password=1111, birthday=2001-02-17]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - After test method: context [DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@736caf7a, testMethod = getFailure@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(DependencyInjectionTestExecutionListener.java:81) - Performing dependency injection for test context [[DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@79d94571, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - Before test method: context [DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@79d94571, testMethod = beans@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1]
+(UserDaoTest.java:47) - context : org.springframework.context.support.GenericApplicationContext@1a5b6f42, started on Mon Jul 01 09:16:45 GMT+09:00 2024
+(UserDaoTest.java:49) - dao : com.pcwk.ehr.UserDao@33c8d7ea
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1]
+(UserDaoTest.java:170) - beans()
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - After test method: context [DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@79d94571, testMethod = beans@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 18, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:143) - After test class: context [DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null].
+(AbstractApplicationContext.java:1063) - Closing org.springframework.context.support.GenericApplicationContext@1a5b6f42, started on Mon Jul 01 09:16:45 GMT+09:00 2024
+(SpringJUnit4ClassRunner.java:139) - SpringJUnit4ClassRunner constructor called with [class com.pcwk.ehr.UserDaoTest]
+(BootstrapUtils.java:108) - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+(BootstrapUtils.java:88) - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+(BootstrapUtils.java:143) - Instantiating TestContextBootstrapper for test class [com.pcwk.ehr.UserDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+(AbstractDelegatingSmartContextLoader.java:264) - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@1eb5174b declaringClass = 'com.pcwk.ehr.UserDaoTest', classes = '{}', locations = '{classpath:/applicationContext.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+(ActiveProfilesUtils.java:80) - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.pcwk.ehr.UserDaoTest]
+(AbstractTestContextBootstrapper.java:124) - @TestExecutionListeners is not present for class [com.pcwk.ehr.UserDaoTest]: using defaults.
+(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+(AbstractTestContextBootstrapper.java:189) - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e1a0406, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3cebbb30, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@12aba8be, org.springframework.test.context.support.DirtiesContextTestExecutionListener@290222c1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@67f639d3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6253c26, org.springframework.test.context.event.EventPublishingTestExecutionListener@49049a04]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(AbstractDirtiesContextTestExecutionListener.java:143) - Before test class: context [DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+(UserDaoTest.java:38) - ===================
+(UserDaoTest.java:39) - setUpBeforeClass() : 
+(UserDaoTest.java:40) - ===================
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(DependencyInjectionTestExecutionListener.java:81) - Performing dependency injection for test context [[DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@49c90a9c, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+(AbstractDelegatingSmartContextLoader.java:274) - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+(AbstractGenericContextLoader.java:107) - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+(AbstractEnvironment.java:302) - Activating profiles []
+(XmlBeanDefinitionReader.java:393) - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+(DefaultCacheAwareContextLoaderDelegate.java:92) - Storing ApplicationContext [442199874] in cache under key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - Before test method: context [DefaultTestContext@107173f0 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@49c90a9c, testMethod = addAndGet@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+(UserDaoTest.java:47) - context : org.springframework.context.support.GenericApplicationContext@1a5b6f42, started on Mon Jul 01 09:34:56 GMT+09:00 2024
+(UserDaoTest.java:49) - dao : com.pcwk.ehr.UserDao@7d227f25
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+(UserDaoTest.java:88) - ===================
+(UserDaoTest.java:89) - addAndGet()
+(UserDaoTest.java:90) - ===================
+(UserDaoTest.java:95) - ───────────────────────
+(UserDaoTest.java:96) - 1번 
+(UserDaoTest.java:97) - ───────────────────────
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:77) - 1. Connection : oracle.jdbc.driver.T4CConnection@5b655846
+(UserDao.java:61) - 2. sql : 
+ DELETE FROM member 
+
+(UserDao.java:64) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@3521f28b
+(UserDao.java:83) - 4. flag : 1
+(UserDaoTest.java:99) - cnt : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:127) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:128) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:137) - 4. flag : 
+ : 1
+(UserDaoTest.java:102) - 1.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@189227fd
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@1038a449
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@7a431f15
+(UserDao.java:47) - 5. count : 1
+(UserDaoTest.java:106) - 1.2 조회 : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:150) - 1. conn : oracle.jdbc.driver.T4CConnection@3c140c77
+(UserDao.java:160) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:161) - 3. param : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:178) - 4.outVO:User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:115) - userVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:116) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:119) - ───────────────────────
+(UserDaoTest.java:120) - 2번 
+(UserDaoTest.java:121) - ───────────────────────
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:127) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:128) - 3. User : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:137) - 4. flag : 
+ : 1
+(UserDaoTest.java:123) - 2.1 등록 flag : 1
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@1edd0b26
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@40ac30ff
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@2b483dea
+(UserDao.java:47) - 5. count : 2
+(UserDaoTest.java:127) - 2.2 조회 : 2
+(UserDaoTest.java:130) - userVO : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:150) - 1. conn : oracle.jdbc.driver.T4CConnection@7284c98f
+(UserDao.java:160) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:161) - 3. param : 
+ : User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDao.java:178) - 4.outVO:User [userId=human02, name=사람02, password=1111, birthday=2001-02-18]
+(UserDaoTest.java:137) - ───────────────────────
+(UserDaoTest.java:138) - 3번 
+(UserDaoTest.java:139) - ───────────────────────
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:127) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:128) - 3. User : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:137) - 4. flag : 
+ : 1
+(UserDaoTest.java:141) - 3.1 등록 flag : 1
+(UserDaoTest.java:144) - userVO : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDaoTest.java:145) - outVO : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:34) - 2. sql : 
+ SELECT count(*) cnt FROM member 
+
+(UserDao.java:36) - 3. conn : oracle.jdbc.driver.T4CConnection@46db2cfe
+(UserDao.java:39) - 4. pstmt : oracle.jdbc.driver.OraclePreparedStatementWrapper@601ed3af
+(UserDao.java:42) - 4. rs :  : oracle.jdbc.driver.ForwardOnlyResultSet@30146f99
+(UserDao.java:47) - 5. count : 3
+(UserDaoTest.java:148) - 3.2 조회 : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:150) - 1. conn : oracle.jdbc.driver.T4CConnection@486f8115
+(UserDao.java:160) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:161) - 3. param : 
+ : User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(UserDao.java:178) - 4.outVO:User [userId=human03, name=사람03, password=1111, birthday=2001-02-19]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - After test method: context [DefaultTestContext@107173f0 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@49c90a9c, testMethod = addAndGet@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(DependencyInjectionTestExecutionListener.java:81) - Performing dependency injection for test context [[DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@736caf7a, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - Before test method: context [DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@736caf7a, testMethod = getFailure@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+(UserDaoTest.java:47) - context : org.springframework.context.support.GenericApplicationContext@1a5b6f42, started on Mon Jul 01 09:34:56 GMT+09:00 2024
+(UserDaoTest.java:49) - dao : com.pcwk.ehr.UserDao@7d227f25
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+(UserDaoTest.java:60) - ===================
+(UserDaoTest.java:61) - Faliure()
+(UserDaoTest.java:62) - ===================
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:77) - 1. Connection : oracle.jdbc.driver.T4CConnection@63f8276e
+(UserDao.java:61) - 2. sql : 
+ DELETE FROM member 
+
+(UserDao.java:64) - 3. PreparedStatement : oracle.jdbc.driver.OraclePreparedStatementWrapper@6127a7e
+(UserDao.java:83) - 4. flag : 3
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:127) - 2. SQL : 
+ : INSERT INTO MEMBER VALUES(?, ?, ?, ?) 
+
+(UserDao.java:128) - 3. User : 
+ : User [userId=human01, name=사람01, password=1111, birthday=2001-02-17]
+(UserDao.java:137) - 4. flag : 
+ : 1
+(UserDaoTest.java:77) - ───────────────────────
+(UserDaoTest.java:78) - failure : user_id 없음 
+(UserDaoTest.java:79) - userVO01 : User [userId=user_id없음, name=사람01, password=1111, birthday=2001-02-17]
+(UserDaoTest.java:80) - ───────────────────────
+(SimpleDriverDataSource.java:142) - Creating new JDBC Driver Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+(UserDao.java:150) - 1. conn : oracle.jdbc.driver.T4CConnection@635572a7
+(UserDao.java:160) - 2. SQL : 
+ : select user_id,          
+         name,            
+         password,        
+         birthday         
+ from member t1       	
+ where t1.user_id = ? 	
+ 
+(UserDao.java:161) - 3. param : 
+ : User [userId=user_id없음, name=사람01, password=1111, birthday=2001-02-17]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - After test method: context [DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@736caf7a, testMethod = getFailure@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.UserDaoTest]
+(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.UserDaoTest]
+(DependencyInjectionTestExecutionListener.java:81) - Performing dependency injection for test context [[DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@79d94571, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - Before test method: context [DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@79d94571, testMethod = beans@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1]
+(UserDaoTest.java:47) - context : org.springframework.context.support.GenericApplicationContext@1a5b6f42, started on Mon Jul 01 09:34:56 GMT+09:00 2024
+(UserDaoTest.java:49) - dao : com.pcwk.ehr.UserDao@7d227f25
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1]
+(UserDaoTest.java:170) - beans()
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1]
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:108) - After test method: context [DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = com.pcwk.ehr.UserDaoTest@79d94571, testMethod = beans@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+(DefaultCacheAwareContextLoaderDelegate.java:103) - Retrieved ApplicationContext [442199874] from cache with key [[MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@61a88b8c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 18, missCount = 1]
+(AbstractDirtiesContextTestExecutionListener.java:143) - After test class: context [DefaultTestContext@38145825 testClass = UserDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@41330d4f testClass = UserDaoTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null].
+(AbstractApplicationContext.java:1063) - Closing org.springframework.context.support.GenericApplicationContext@1a5b6f42, started on Mon Jul 01 09:34:56 GMT+09:00 2024

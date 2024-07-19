@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- Target -->
+	<bean id="memberImpl" class="com.pcwk.ehr.cmn.aspectj.MemberImpl"></bean>
+	
+	<!--  Advice
+		  어드바이스 : 부가기능
+		  어드바이스는 특정 조인 포인트에서 실행될 코드를 정의한다.
+		  어드바이스는 애스펙트의 동작을 구체화하는 부분이다.
+		  독립된 클래스의 메서드로 작성한다.
+	 -->
+	<bean id="logginAop" class="com.pcwk.ehr.cmn.aspectj.LoggingAop"></bean>
+
+	<!-- pointcut
+		 특정 조인 포인트를 선택하는 표현식이다.
+		 조인포인트가 어드바이스와 연결될 위치를 결정한다.
+		 
+		 * : return (전체)
+		 com.pcwk.ehr : 패키지
+		 .. : 패키지 하위 모든 패키지
+		 *Impl : 클래스 이름이 Impl로 끝나는 클래스
+		 do* : do로 시작하고 있는 모든 메서드
+		 (..) : 모든 파라메터
+		 aop:after -> target의 메서드를 실행한 이후 Advice 수행
+	 -->
+	<aop:config>
+		<aop:aspect ref="logginAop">
+			<aop:before method="logging"
+			  pointcut="execution( * com.pcwk.ehr..*Impl.do*(..) )"
+			/>
+		</aop:aspect>
+	</aop:config>
+	
+</beans>
