@@ -1,10 +1,47 @@
 
-/**
- * 입력 값이 비어있는지 확인하는 함수 
- * @param {any} value : 입력값
- * @returns {boolean} 비어 있으면 true, 그렇치 않으면 false
- */ 
-let isEmpty  = function(value){
+ 
+  PClass = {
+    pAjax : function(url, params,dataType="html",type="GET",async = true, _callback){
+        //code
+        console.log("┌──────────────────┐"); 
+        console.log("│ ajaxCall()       │");   
+        console.log("└──────────────────┘");        
+        
+        console.log("1. url:"+url);
+        console.log("2. dataType:"+dataType);
+        console.log("3. type:"+type);  
+        
+        params.url = url;
+        
+        let paramArray = Object.keys(params);
+        if(paramArray.length > 0){
+            console.log("4. param -----");  
+            for(let i =0; i<paramArray.length;i++){
+                console.log(paramArray[i]+": "+params[paramArray[i]]);
+            }
+            console.log("param end-----");  
+        }
+        
+        
+        return  $.ajax({
+                    type: type, 
+                    url:url,
+                    asyn:async,
+                    dataType:dataType,
+                    data: params,
+                    success:function(response){//통신 성공
+                        console.log("success response:"+response);
+                        _callback(response)
+                        
+                    },
+                    error:function(response){//실패시 처리
+                        console.error("error:"+response);
+                    }
+                });
+		    }
+		}
+ 
+  let isEmpty  = function(value){
   
   if(null === value || value == undefined){
     return true;

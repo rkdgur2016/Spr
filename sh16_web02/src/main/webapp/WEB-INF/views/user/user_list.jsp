@@ -92,8 +92,9 @@
         </div> 
     </form>
   <!--// 검색 end ------------------------------------------------------------->
+  MEMBER_LEVEL : ${MEMBER_LEVEL }
   <!-- table -->
-    <table class="table table-striped table-hover table-bordered">
+    <table id="userTable" class="table table-striped table-hover table-bordered">
       <thead >
         <tr class="table-success">
           <th class="text-center col-sm-1">NO.</th>
@@ -130,6 +131,87 @@
       </tbody>
      </table> 
   <!--// table end ------------------------------------------------------------>
+  
+  <!-- pagenation -->
+  <div class="text-center">
+  	<div id="page-selection" class="text-cneter page">
+  	
+  	</div>
+  </div>
+  <!-- /pagenation -->
+  
+  <!-- 관리 button -->
+  <div class="mb-2 d-grid gap-2 d-md-flex justify-content-md-end">
+  	<input type="button" value="초기화" id="initClearBtn" class="btn btn-primary">
+  	<input type="button" value="등록" id="doSave" class="btn btn-primary">
+  	<input type="button" value="수정" id="doUpdate" class="btn btn-primary">
+  	<input type="button" value="삭제" id="doDelete" class="btn btn-primary">
+  </div>
+  <!-- /관리 button -->
+  <!-- form -->
+  <form action="#" class="form-horizontal">
+	  <div class="row mb-2">
+	    <label for="userId" class="col-sm-2 col-form-label">아이디</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" name="userId" id="userId"  maxlength="20" required="required">
+	    </div>      
+	  </div>
+	  <div class="row mb-2">
+	    <label for="name" class="col-sm-2 col-form-label">이름</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" name="name" id="name"  maxlength="10" required="required">
+	    </div>      
+	  </div>
+	  <div class="row mb-2">
+	    <label for="password" class="col-sm-2 col-form-label">비밀번호</label>
+	    <div class="col-sm-10">
+	      <input type="password" class="form-control" name="password" id="password"  maxlength="100" required="required">
+	    </div>      
+	  </div>
+	  <div class="row mb-2">
+	    <label for="birthday" class="col-sm-2 col-form-label">생년월일</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" name="birthday" id="birthday"  maxlength="10" required="required">
+	    </div>      
+	  </div>
+	  <div class="row mb-2">
+	    	<label for="u_level" class="col-sm-2 col-form-label">등급</label>
+	    <div class="col-sm-10">
+	    <select name="level" id="level" class="form-select">
+            	<c:forEach var="item" items="${MEMBER_LEVEL}">
+                	<option value="${item.detCode}"
+                	<c:if test="${item.detCode == search.pageSize}">selected</c:if>
+                	>${item.detNm }</option>
+                </c:forEach>
+            </select>
+	    </div>
+	  </div>
+	  <div class="row mb-2">
+	    <label for="login" class="col-sm-2 col-form-label">로그인</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" name="login" id="login"  maxlength="8" required="required">
+	    </div>      
+	  </div>
+	  <div class="row mb-2">
+	    <label for="recommend" class="col-sm-2 col-form-label">추천</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" name="recommend" id="recommend"  maxlength="8" required="required">
+	    </div>      
+	  </div>
+	  <div class="row mb-2">
+	    <label for="email" class="col-sm-2 col-form-label">이메일</label>
+	    <div class="col-sm-10">
+	      <input type="email" class="form-control" name="email" id="email"  maxlength="40" required="required">
+	    </div>      
+	  </div>
+	  <div class="row mb-2">
+	    <label for="regDt" class="col-sm-2 col-form-label">등록일</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" name="regDt" id="regDt"  maxlength="40" required="required">
+	    </div>      
+	  </div>
+  </form>
+  <!-- /form -->
   
 </div>
 <!--// container end ---------------------------------------------------------->

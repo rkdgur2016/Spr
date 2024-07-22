@@ -87,17 +87,17 @@ public class UserController implements PLog {
 		//------------------------------------------------
 		Code code = new Code();
 		code.setMstCode("MEMBER_SEARCH");
-		
 		List<Code> memberSearch = this.codeService.doRetrieve(code);
 		model.addAttribute("MEMBER_SEARCH", memberSearch);
 
 		code.setMstCode("COM_PAGE_SIZE");
-			
 		List<Code> pageSizeSearch = this.codeService.doRetrieve(code);
-		
 		model.addAttribute("COM_PAGE_SIZE", pageSizeSearch);
-		//------------------------------------------------
 		
+		code.setMstCode("MEMBER_LEVEL");
+		List<Code> memberLevel = this.codeService.doRetrieve(code);
+		model.addAttribute("MEMBER_LEVEL", memberLevel);
+		//------------------------------------------------
 		//mode
 		return viewName;
 	}
@@ -195,9 +195,13 @@ public class UserController implements PLog {
 		}
 		
 		jsonString = new Gson().toJson(new Message(flag, message));
-		log.debug("2.jsonString:" + jsonString);
 		
-		return jsonString;
+		//user
+		String jsonUser = new Gson().toJson(outVO);
+		String allMessage = "{\"user\" : " + jsonUser + ",\"message\" : " + jsonString +"}";
+		log.debug("3.allMessage:" + allMessage);
+		
+		return allMessage;
 	}
 	
 	/**
