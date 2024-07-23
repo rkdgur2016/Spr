@@ -11,14 +11,9 @@ import com.pcwk.ehr.user.domain.User;
 
 @Mapper
 public interface UserMapper extends WorkDiv<User> {
-
-	/**
-	 * 다건 등록
-	 * 
-	 * @param user
-	 * @return
-	 * @throws SQLException
-	 */
+	
+	int idDuplicateCheck(User inVO)throws SQLException;
+	
 	int multipleSave() throws SQLException;
 
 	/**

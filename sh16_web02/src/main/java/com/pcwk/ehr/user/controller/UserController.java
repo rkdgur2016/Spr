@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.pcwk.ehr.cmn.Message;
 import com.pcwk.ehr.cmn.PLog;
 import com.pcwk.ehr.cmn.Search;
@@ -40,8 +41,94 @@ public class UserController implements PLog {
 		log.debug("└───────────────────────────┘");
 	}
 	
+	@RequestMapping(value="/idDuplicateCheck.do"
+					,method = RequestMethod.GET
+					,produces = "text/plain;charset=UTF-8")
+	@ResponseBody
+	public String idDuplicateCheck(User inVO) throws SQLException {
+		String jsonString = "";
+		
+		//1.
+		log.debug("1.param:" + inVO);
+		
+		int flag = userService.idDuplicateCheck(inVO);
+		log.debug("2.flag:" + flag);
+		
+		//2. 
+		String message = "";
+		if(1 == flag) {
+			message = inVO.getUserId() + "이 존재합니다.";
+		}else {
+			message = inVO.getUserId() + "을 사용할 수 있습니다.";
+		}
+		
+		jsonString = new Gson().toJson(new Message(flag, message));
+		log.debug("3.jsonString:" + jsonString);
+		
+		return jsonString;
+	}
+	
+	@RequestMapping(value = "/doRetrieveAjax.do"
+			   , method = RequestMethod.GET
+			   , produces = "text/plain;charset=UTF-8"
+			   ) //produces : 화면으로 전송 encoding 
+	public String doRetrieveAjax(Model model, HttpServletRequest req) throws SQLException{
+		
+		String jsonString = "";
+
+		log.debug("┌───────────────────────────┐");
+		log.debug("│ doRetrieve()              │");
+		log.debug("└───────────────────────────┘");
+		
+		Search search = new Search();
+		
+		//검색구분
+		//검색 null 처리 : null -> ""
+		String searchDiv = StringUtil.nvl(req.getParameter("searchDiv"), "");
+		String searchWord = StringUtil.nvl(req.getParameter("searchWord"), "");
+		
+		search.setSearchDiv(searchDiv);
+		search.setSearchWord(searchWord);
+		
+		//브라우저에서 숫자 : 문자로 들어 온다.
+		//페이지 사이지 : null -> 10
+		//페이지 번호 : null -> 1
+		String pagsSize = StringUtil.nvl(req.getParameter("pageSize"), "10");
+		String pageNo = StringUtil.nvl(req.getParameter("pageNo"), "1");
+		
+		search.setPageSize(Integer.parseInt(pagsSize));
+		search.setPageNo(Integer.parseInt(pageNo));
+		
+		log.debug("┌");
+		log.debug("│ 1. param search:" + search);
+		log.debug("└");
+		
+		List<User> list = this.userService.doRetrieve(search);
+		
+		// 페이징 -----------------------------------------
+		int totalCnt = 0;
+		
+		if(list != null && list.size() > 0) {
+			User firstVO = list.get(0);
+			totalCnt = firstVO.getTotalCnt();	
+		}
+		
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();	
+		
+		String jsonList = new Gson().toJson(list);
+		String allJson = "{\"user\" : " +jsonList+ "}";
+		
+		log.debug("┌");
+		log.debug("│ 2. jsonList : " + jsonList);
+		log.debug("│ 3. allJson : " + allJson);
+		log.debug("└");
+		
+		return allJson;
+	}
+	
 	@RequestMapping(value = "/doRetrieve.do"
 			   , method = RequestMethod.GET
+			   , produces = "text/plain;charset=UTF-8"
 			   ) //produces : 화면으로 전송 encoding 
 	public String doRetrieve(Model model, HttpServletRequest req) throws SQLException{
 		// /WEB-INF/views+ viewName + ".jsp
@@ -84,6 +171,17 @@ public class UserController implements PLog {
 		
 		model.addAttribute("search", search); //검색 조건
 		
+		// 페이징 -----------------------------------------
+		int totalCnt = 0;
+		
+		if(list != null && list.size() > 0) {
+			
+			User firstVO = list.get(0);
+			totalCnt = firstVO.getTotalCnt();
+			
+		}
+		model.addAttribute("totalCnt", totalCnt); 
+		//------------------------------------------------
 		//------------------------------------------------
 		Code code = new Code();
 		code.setMstCode("MEMBER_SEARCH");

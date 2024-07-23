@@ -8,6 +8,7 @@ import com.pcwk.ehr.user.domain.User;
 
 public interface UserService {
 
+	int idDuplicateCheck(User inVO) throws SQLException;
 	/**
 	 * 최초 가입시 Level이 Null이면 BASIC
 	 * 

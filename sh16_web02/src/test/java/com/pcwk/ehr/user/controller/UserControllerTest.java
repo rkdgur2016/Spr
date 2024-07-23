@@ -2,7 +2,8 @@ package com.pcwk.ehr.user.controller;
 
 import static com.pcwk.ehr.user.service.UserServiceImpl.MIN_LOGINCOUNT_FOR_SILVER;
 import static com.pcwk.ehr.user.service.UserServiceImpl.MIN_RECOMMEND_FOR_GOLD;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -21,7 +22,6 @@ import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
@@ -30,7 +30,6 @@ import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilde
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.google.gson.Gson;
@@ -43,7 +42,8 @@ import com.pcwk.ehr.user.domain.User;
 
 @WebAppConfiguration
 @RunWith(SpringJUnit4ClassRunner.class) // 스프링 컨텍스트 프레임워크의 JUnit확장기능 지정
-@ContextConfiguration(locations = { "file:src/main/webapp/WEB-INF/spring/root-context.xml", "file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" })
+@ContextConfiguration(locations = { "file:src/main/webapp/WEB-INF/spring/root-context.xml",
+									"file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" })
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING) //알파벳 순서로 테스트 메서드 실행
 public class UserControllerTest implements PLog {
@@ -73,23 +73,23 @@ public class UserControllerTest implements PLog {
 		search = new Search();
 		
 		users = Arrays.asList(
-				new User("rogan01", "이상무01", "4321", "2002/12/31", Level.BASIC, MIN_LOGINCOUNT_FOR_SILVER -1, MIN_RECOMMEND_FOR_GOLD - 30, "ddswlstj@naver.com",
+				new User("rogan01", "사용자01", "4321", "2002/12/31", Level.BASIC, MIN_LOGINCOUNT_FOR_SILVER -1, MIN_RECOMMEND_FOR_GOLD - 30, "ddswlstj@naver.com",
 						"sysdate사용"),
-				new User("rogan02", "이상무02", "4321", "2002/12/30", Level.BASIC, MIN_LOGINCOUNT_FOR_SILVER, MIN_RECOMMEND_FOR_GOLD - 28, "ddswlstj@naver.com",
+				new User("rogan02", "사용자02", "4321", "2002/12/30", Level.BASIC, MIN_LOGINCOUNT_FOR_SILVER, MIN_RECOMMEND_FOR_GOLD - 28, "ddswlstj@naver.com",
 						"sysdate사용"),
-				new User("rogan03", "이상무03", "4321", "2002/12/29", Level.SILVER, MIN_LOGINCOUNT_FOR_SILVER + 1, MIN_RECOMMEND_FOR_GOLD -1, "ddswlstj@naver.com",
+				new User("rogan03", "사용자03", "4321", "2002/12/29", Level.SILVER, MIN_LOGINCOUNT_FOR_SILVER + 1, MIN_RECOMMEND_FOR_GOLD -1, "ddswlstj@naver.com",
 						"sysdate사용"),
-				new User("rogan04", "이상무04", "4321", "2002/12/28", Level.SILVER, MIN_LOGINCOUNT_FOR_SILVER + 2, MIN_RECOMMEND_FOR_GOLD, "ddswlstj@naver.com",
+				new User("rogan04", "사용자04", "4321", "2002/12/28", Level.SILVER, MIN_LOGINCOUNT_FOR_SILVER + 2, MIN_RECOMMEND_FOR_GOLD, "ddswlstj@naver.com",
 						"sysdate사용"),
-				new User("rogan05", "이상무05", "4321", "2002/12/27", Level.GOLD, MIN_LOGINCOUNT_FOR_SILVER + 5, MIN_RECOMMEND_FOR_GOLD + 2, "ddswlstj@naver.com",
+				new User("rogan05", "사용자05", "4321", "2002/12/27", Level.GOLD, MIN_LOGINCOUNT_FOR_SILVER + 5, MIN_RECOMMEND_FOR_GOLD + 2, "ddswlstj@naver.com",
 						"sysdate사용"),
-				new User("rogan06", "이상무06", "4321", "2002/12/31", Level.BASIC, MIN_LOGINCOUNT_FOR_SILVER -1, MIN_RECOMMEND_FOR_GOLD - 30, "ddswlstj@naver.com",
+				new User("rogan06", "사용자06", "4321", "2002/12/31", Level.BASIC, MIN_LOGINCOUNT_FOR_SILVER -1, MIN_RECOMMEND_FOR_GOLD - 30, "ddswlstj@naver.com",
 						"sysdate사용"),
-				new User("rogan07", "이상무07", "4321", "2002/12/30", Level.BASIC, MIN_LOGINCOUNT_FOR_SILVER, MIN_RECOMMEND_FOR_GOLD - 28, "ddswlstj@naver.com",
+				new User("rogan07", "사용자07", "4321", "2002/12/30", Level.BASIC, MIN_LOGINCOUNT_FOR_SILVER, MIN_RECOMMEND_FOR_GOLD - 28, "ddswlstj@naver.com",
 						"sysdate사용"),
-				new User("rogan08", "이상무08", "4321", "2002/12/29", Level.SILVER, MIN_LOGINCOUNT_FOR_SILVER + 1, MIN_RECOMMEND_FOR_GOLD -1, "ddswlstj@naver.com",
+				new User("rogan08", "사용자08", "4321", "2002/12/29", Level.SILVER, MIN_LOGINCOUNT_FOR_SILVER + 1, MIN_RECOMMEND_FOR_GOLD -1, "ddswlstj@naver.com",
 						"sysdate사용"),
-				new User("rogan09", "이상무09", "4321", "2002/12/28", Level.SILVER, MIN_LOGINCOUNT_FOR_SILVER + 2, MIN_RECOMMEND_FOR_GOLD, "ddswlstj@naver.com",
+				new User("rogan09", "사용자09", "4321", "2002/12/28", Level.SILVER, MIN_LOGINCOUNT_FOR_SILVER + 2, MIN_RECOMMEND_FOR_GOLD, "ddswlstj@naver.com",
 						"sysdate사용"));
 		
 		mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
@@ -103,7 +103,70 @@ public class UserControllerTest implements PLog {
 		log.debug("└──────────────────────────────┘");
 	}
 	
-	//@Ignore
+	@Test
+	public void doRetrieveAjax() throws Exception{
+		log.debug("┌───────────────────────────┐");
+		log.debug("│ *doRetrieveAjax()*        │");
+		log.debug("└───────────────────────────┘");
+		
+		//다건 데이터 입력
+		userMapper.multipleSave();
+		
+		search.setPageNo(1);
+		
+		MockHttpServletRequestBuilder requestBuilder 
+		= MockMvcRequestBuilders.get("/user/doRetrieveAjax.do")
+		.param("searchDiv", search.getSearchDiv())
+		.param("searchWord", search.getSearchWord())
+		.param("pageSize", search.getPageSize()+"")
+		.param("pageNo", search.getPageNo()+"");
+		
+		ResultActions resultActions = mockMvc.perform(requestBuilder)
+				.andExpect(status().is2xxSuccessful());
+		
+		resultActions.andDo(print());
+	}
+	
+	@Ignore
+	@Test
+	public void idDuplicateCheck() throws Exception {
+		log.debug("┌───────────────────────────┐");
+		log.debug("│ *idDuplicateCheck()*      │");
+		log.debug("└───────────────────────────┘");
+
+		//1.단건 등록
+		User newUser01 = users.get(0);
+		
+		int flag = userMapper.doSave(newUser01);
+		assertEquals(1, flag);
+		
+		//1. url, param 설정
+		MockHttpServletRequestBuilder requestBuilder 
+		= MockMvcRequestBuilders.get("/user/idDuplicateCheck.do")
+		.param("userID", newUser01.getUserId());
+		
+		//2. 호출
+		ResultActions resultActions = mockMvc.perform(requestBuilder)
+				.andExpect(MockMvcResultMatchers.content().contentType("text/plain;charset=UTF-8"))
+				.andExpect(status().is2xxSuccessful());
+		
+		//3. JSON -> Message
+		String jsonResult = resultActions.andDo(print())
+				.andReturn()
+				.getResponse().getContentAsString();
+
+		log.debug("┌──────────────────────────────┐");
+		log.debug("│ jsonResult:" + jsonResult      );
+		log.debug("└──────────────────────────────┘");
+		
+		Message resultMessage = new Gson().fromJson(jsonResult, Message.class);
+		
+		//비교
+		assertEquals(1, resultMessage.getMessageId());
+		assertEquals(newUser01.getUserId() + "는 사용 불가 합니다..", resultMessage.getMessageContents());
+	}
+
+	@Ignore
 	@Test
 	public void doRetrieve() throws Exception {
 		log.debug("┌───────────────────────────┐");
@@ -151,7 +214,7 @@ public class UserControllerTest implements PLog {
 		assertEquals("user/user_list", viewName);
 		
 	}
-
+	
 	@Ignore
 	@Test
 	public void doUpdate() throws Exception {

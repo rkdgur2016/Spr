@@ -189,5 +189,14 @@ public class UserServiceImpl implements PLog, UserService {
 
 		return outVO;
 	}
+	
+	public int idDuplicateCheck(User inVO) throws SQLException{
+		log.debug("1. param : " + inVO);
+		
+		int count = userMapper.idDuplicateCheck(inVO);
+		log.debug("3. count : " + count);
+		
+		return count;
+	}
 
 }// class end

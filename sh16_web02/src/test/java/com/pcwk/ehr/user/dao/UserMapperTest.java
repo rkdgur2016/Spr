@@ -60,6 +60,35 @@ public class UserMapperTest implements PLog {
 		search = new Search();
 	}
 	
+	@Test
+	public void idDuplicateCheck() throws SQLException {
+		//1. 데이터 1건 입력
+		//2. 단건 조회
+		//3. 비교
+		//4. id 중복체크
+		
+		int count = userMapper.getCount();
+		assertEquals(0, count);
+
+		// 2. 등록
+		int flag = userMapper.doSave(userVO01);
+		assertEquals(1, flag);
+		assertEquals(userMapper.getCount(), 1);
+
+		// 3.
+		User outVO = userMapper.doSelectOne(userVO01);
+		assertNotNull(outVO);// return User Null check
+		isSameUser(userVO01, outVO);
+		
+		//4.
+		flag = userMapper.idDuplicateCheck(userVO01);
+		assertEquals(1, flag);
+		
+		flag = userMapper.idDuplicateCheck(userVO02);
+		assertEquals(0, flag);
+	}
+	
+	
 	@Ignore
 	@Test
 	public void doUpdate() throws SQLException {
@@ -108,6 +137,7 @@ public class UserMapperTest implements PLog {
 
 	}
 
+	@Ignore
 	@Test
 	public void doRetrieve() throws SQLException {
 

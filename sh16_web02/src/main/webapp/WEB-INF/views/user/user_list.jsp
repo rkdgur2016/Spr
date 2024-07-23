@@ -15,11 +15,11 @@
 */
  --%>
 <%@page import="com.pcwk.ehr.cmn.StringUtil"%>
+<%@page import="com.pcwk.ehr.cmn.Search"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 	<c:set var="CP" value="${pageContext.request.contextPath}" />
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -92,7 +92,6 @@
         </div> 
     </form>
   <!--// 검색 end ------------------------------------------------------------->
-  MEMBER_LEVEL : ${MEMBER_LEVEL }
   <!-- table -->
     <table id="userTable" class="table table-striped table-hover table-bordered">
       <thead >
@@ -131,7 +130,26 @@
       </tbody>
      </table> 
   <!--// table end ------------------------------------------------------------>
+  <%
+  	//총 글 수 :
+  	int totalCnt = (Integer)request.getAttribute("totalCnt");
+  	Search search = (Search)request.getAttribute("search");
+  	
+  	//페이지 번호
+  	int pageNo = search.getPageNo();
+  	
+  	//페이지 사이즈
+  	int pageSize = search.getPageSize();
+  	
+  	//바닥글
+  	int bottomCount = search.BOTTOM_COUNT;
+  	
+  	String url = "/ehr/user/doRetrieve.do";
+  	String scriptName = "pageRetrieve";
+  	
+  	out.print(StringUtil.renderingPaging(totalCnt, pageNo, pageSize, bottomCount, url, scriptName));
   
+  %>
   <!-- pagenation -->
   <div class="text-center">
   	<div id="page-selection" class="text-cneter page">
@@ -152,15 +170,18 @@
   <form action="#" class="form-horizontal">
 	  <div class="row mb-2">
 	    <label for="userId" class="col-sm-2 col-form-label">아이디</label>
-	    <div class="col-sm-10">
+	    <div class="col-sm-8">
 	      <input type="text" class="form-control" name="userId" id="userId"  maxlength="20" required="required">
+	    </div>
+	     <div class="col-sm-2 d-md-flex justify-content-md-end">	    
+	    	<input type="button" value="중복확인" id="idDuplicateCheck" class="btn btn-info">      
 	    </div>      
 	  </div>
 	  <div class="row mb-2">
 	    <label for="name" class="col-sm-2 col-form-label">이름</label>
 	    <div class="col-sm-10">
 	      <input type="text" class="form-control" name="name" id="name"  maxlength="10" required="required">
-	    </div>      
+	    </div>
 	  </div>
 	  <div class="row mb-2">
 	    <label for="password" class="col-sm-2 col-form-label">비밀번호</label>

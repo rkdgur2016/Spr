@@ -5,6 +5,8 @@ package com.pcwk.ehr.cmn;
  */
 
 public class DTO {
+	
+	public static final int BOTTOM_COUNT = 10;
 
 	private int no;// 글번호
 	private int totalCnt;// 총 글수
