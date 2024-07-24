@@ -1,15 +1,19 @@
+
+
+
+
 PClass = {
-    pAjax : function(url, params,dataType="html",type="GET",async = true, _callback){
+    pAjax : function(_url, params,_dataType="html",_type="GET",_async = true, _callback){
         //code
         console.log("┌──────────────────┐"); 
         console.log("│ ajaxCall()       │");   
         console.log("└──────────────────┘");        
         
-        console.log("1. url:"+url);
-        console.log("2. dataType:"+dataType);
-        console.log("3. type:"+type);  
+        console.log("1. url:"+_url);
+        console.log("2. dataType:"+_dataType);
+        console.log("3. type:"+_type);  
         
-        params.url = url;
+        params.url = _url;
         
         let paramArray = Object.keys(params);
         if(paramArray.length > 0){
@@ -22,10 +26,10 @@ PClass = {
         
         
         return  $.ajax({
-                    type: type, 
-                    url:url,
-                    asyn:async,
-                    dataType:dataType,
+                    type: _type, 
+                    url:_url,
+                    asyn:_async,
+                    dataType:_dataType,
                     data: params,
                     success:function(response){//통신 성공
                         console.log("success response:"+response);
@@ -41,7 +45,6 @@ PClass = {
 
 
 }
-
 
 /**
  * 입력 값이 비어있는지 확인하는 함수 
@@ -80,7 +83,7 @@ let pager = function (maxNum, currentPageNo, rowPerPage, bottomCount, url, scrip
         return '';
     }
 
-    html.push('<ul class="pagination">');
+    html.push('<ul class="pagination justify-content-center">');
     
     // <<
     if (nowBlockNo > 1 && nowBlockNo <= maxBlockNo) {
@@ -114,7 +117,7 @@ let pager = function (maxNum, currentPageNo, rowPerPage, bottomCount, url, scrip
     }
     
     // >
-    if (maxPageNo > endPageNo) {
+    if (maxPageNo >= endPageNo) {
         html.push('<li class="page-item">');
         html.push('<a class="page-link" href="javascript:' + scriptName + '(\'' + url + '\',' + ((nowBlockNo * bottomCount) + 1) + ');">');
         html.push('<span>&gt;</span>');
@@ -123,7 +126,7 @@ let pager = function (maxNum, currentPageNo, rowPerPage, bottomCount, url, scrip
     }
     
     // >>
-    if (maxPageNo > endPageNo) {
+    if (maxPageNo >= endPageNo) {
         html.push('<li class="page-item">');
         html.push('<a class="page-link" href="javascript:' + scriptName + '(\'' + url + '\',' + maxPageNo + ');">');
         html.push('<span>&raquo;</span>');
